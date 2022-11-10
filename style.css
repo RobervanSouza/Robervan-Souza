@@ -59,6 +59,9 @@ html {
   margin-right: 4rem;
   transition: color 0.1s ease;
 }
+.navbar.sticky li a {
+color: black;
+}
 .navbar .menu li a:hover {
   color: white;
 }
