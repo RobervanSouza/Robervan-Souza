@@ -1,6 +1,6 @@
 export default {
     name: 'testimonials',
-    title: 'Testimonials',
+    title: 'Obervação',
     type: 'document',
     fields: [
         {
