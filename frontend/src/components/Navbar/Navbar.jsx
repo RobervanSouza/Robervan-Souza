@@ -1,20 +1,47 @@
-import React from 'react'
-import './Navbar.scss'
-import { images } from '../../constants'
+import React, { useState} from 'react';
+import './Navbar.scss';
+import { images } from '../../constants';
+import { HiOutlineMenuAlt4, HiOutlineX } from "react-icons/hi";
+import { motion} from 'framer-motion';
+
+
 function Navbar() {
+  const [menu, setMenu] = useState(false);
   return (
-    <nav className='Nav_bar' >
-      <div>
+    <nav className="app__navbar">
+      <div className="app__navbar-logo">
         <img src={images.logo} alt="logo" />
       </div>
-      <ul>
+      <ul className="app__navbar-links">
         {["home", "sobre", "projetos", "skills", "contato"].map((itens) => (
-          <li key={`link-${itens}`}>
+          <li className="app__flex p-text" key={`link-${itens}`}>
             <div />
             <a href={`#${itens}`}> {itens} </a>
           </li>
         ))}
       </ul>
+      <div className="app__navbar-menu">
+        <HiOutlineMenuAlt4 onClick={() => setMenu(true)} />
+        {menu && (
+          <motion.div
+            whileInView={{ x: [300, 0] }}
+            transition={{ duration: 0.85, ease: "easeOut" }}>
+            <HiOutlineX onClick={() => setMenu(false)} />
+            <ul >
+
+            {["home", "sobre", "projetos", "skills", "contato"].map((itens) => (
+              <li key={itens}>
+                
+                <a href={`#${itens}`} onClick={() => setMenu(false)}>
+                  
+                  {itens}
+                </a>
+              </li>
+            ))}
+            </ul>
+          </motion.div>
+        )}
+      </div>
     </nav>
   );
 }
