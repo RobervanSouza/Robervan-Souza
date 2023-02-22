@@ -124,7 +124,7 @@
     }
   }
 
-  // circles with different height & width
+
 
   div:nth-child(1) {
     width: 100px;
@@ -159,6 +159,7 @@
     }
   }
 
+
   @media screen and (max-width: 1200px) {
     width: 100%;
     flex-direction: row;
@@ -171,7 +172,7 @@
   }
 }
 
-.app__header-img {
+.app__header-image {
   flex: 1;
   height: 100%;
 
@@ -185,7 +186,7 @@
     object-fit: contain;
     z-index: 1;
   }
-
+   //imagem sobre o circulo
   .overlay_circle {
     position: absolute;
     left: 0;

@@ -1,6 +1,6 @@
 import React from 'react'
 import "./Header.scss"; 
-import { easeInOut, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { images } from "../../constants";
 
 
@@ -39,7 +39,7 @@ function Header() {
         whileInView={{ opacity: [0, 1] }}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__header-image">
-        <img src={images.profile} alt="imagem perfil" />
+        <img src={images.robervan} alt="imagem perfil" />
         <motion.img
           whileInView={{ scale: [0, 1] }}
           transition={{ duration: 1, ease: "easeInOut" }}
