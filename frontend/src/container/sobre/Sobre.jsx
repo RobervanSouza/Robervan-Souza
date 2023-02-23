@@ -1,24 +1,20 @@
-import React,{ useEffect, useState} from 'react'
+import React from 'react'
 import  './Sobre.scss';
 import {motion} from 'framer-motion';
 import { images } from "../../constants";
-import { urlFor, cliente } from '../../cliente';
+import AppWrap from '../../wrapper/AppWrap';
+
 const sobres = [
   { titulo: "Desenvolvedor", descricao: 'full-stack', imgUrl: images.about01},
   { titulo: "Desenvolvedor", descricao: 'full-stack', imgUrl: images.about02},
+  { titulo: "Desenvolvedor", descricao: 'full-stack', imgUrl: images.about03},
   { titulo: "Desenvolvedor", descricao: 'full-stack', imgUrl: images.about03},
  
 ];
 
 function Sobre() {
-  const [sobres, setSobre] = useState([]);
-  useEffect(() => {
-    const query = '*[_type == "sobre"]';
 
-    cliente.fetch(query).then((data) =>{
-      
-    })
-  }, []);
+  
   return (
     <>
       <h2 className="head-text">
@@ -50,4 +46,4 @@ function Sobre() {
   );
 }
 
-export default Sobre
+export default AppWrap(Sobre, 'sobre');

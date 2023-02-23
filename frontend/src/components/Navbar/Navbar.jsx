@@ -13,12 +13,14 @@ function Navbar() {
         <img src={images.logo} alt="logo" />
       </div>
       <ul className="app__navbar-links">
-        {["home", "sobre", "projetos", "skills", "contato"].map((itens) => (
-          <li className="app__flex p-text" key={`link-${itens}`}>
-            <div />
-            <a href={`#${itens}`}> {itens} </a>
-          </li>
-        ))}
+        {["home", "sobre", "experiencias", "projetos", "skills", "contato"].map(
+          (itens) => (
+            <li className="app__flex p-text" key={`link-${itens}`}>
+              <div />
+              <a href={`#${itens}`}> {itens} </a>
+            </li>
+          )
+        )}
       </ul>
       <div className="app__navbar-menu">
         <HiOutlineMenuAlt4 onClick={() => setMenu(true)} />
@@ -27,17 +29,21 @@ function Navbar() {
             whileInView={{ x: [300, 0] }}
             transition={{ duration: 0.85, ease: "easeOut" }}>
             <HiOutlineX onClick={() => setMenu(false)} />
-            <ul >
-
-            {["home", "sobre", "projetos", "skills", "contato"].map((itens) => (
-              <li key={itens}>
-                
-                <a href={`#${itens}`} onClick={() => setMenu(false)}>
-                  
-                  {itens}
-                </a>
-              </li>
-            ))}
+            <ul>
+              {[
+                "home",
+                "sobre",
+                "experiencias",
+                "projetos",
+                "skills",
+                "contato",
+              ].map((itens) => (
+                <li key={itens}>
+                  <a href={`#${itens}`} onClick={() => setMenu(false)}>
+                    {itens}
+                  </a>
+                </li>
+              ))}
             </ul>
           </motion.div>
         )}
