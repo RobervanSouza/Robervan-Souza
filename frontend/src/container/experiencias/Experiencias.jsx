@@ -25,7 +25,7 @@ const experiencia = [
     name: "Desenvolvedor",
     projectLink: "full-stack",
     imgUrl: images.about02,
-    codeLink: "dadasd",
+    codeLink: "",
     tags: ["React JS", "All"],
   },
   {
@@ -34,7 +34,7 @@ const experiencia = [
     name: "Desenvolvedor",
     projectLink: "full-stack",
     imgUrl: images.about03,
-    codeLink: "dadasd",
+    codeLink: "",
     tags: ["UI/UX", "All"],
   },
   {
@@ -43,13 +43,13 @@ const experiencia = [
     name: "Desenvolvedor",
     projectLink: "full-stack",
     imgUrl: images.about03,
-    codeLink: "dadasd",
+    codeLink: "",
     tags: ["Mobile App", "All"],
   },
 ];
 
 function Experiencias() {
-    const [works, setWorks] = useState([]);
+    
     const [filterWork, setFilterWork] = useState([]);
     
     const [activeFilter, setActiveFilter] = useState("All");
