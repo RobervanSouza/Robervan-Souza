@@ -1,5 +1,5 @@
 .linkedin{
-
+   cursor: pointer;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -14,10 +14,11 @@
     background-color: white;
     margin: 1.25rem 0;
     border: 1px solid white;
-    
+    margin-top: 14rem;
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-left: 12px;
 
     transition: all 0.3s ease-in-out;
 
@@ -28,14 +29,16 @@
     }
 
     &:hover {
-      background-color: rgb(97, 97, 228);
-      border-color: black;
+           box-shadow: 0 0 0 2px white,
+    0 0 50px  rgb(8, 26, 215),
+    0 0 100px  rgb(8, 26, 215);     
+            animation: animate 8s linear infinite;
 
       svg {
         color: blue;
       }
     }
-
+   
     @media screen and (min-width: 2000px) {
       width: 70px;
       height: 70px;
@@ -48,3 +51,162 @@
       }
     }
   }
+
+@keyframes botao {
+    0%{
+        transform: translateY(100vh) scale();
+    }
+   
+    50%{
+        transform: translateY(-100vh) scale(2);
+    }
+    100%{
+      transform: rotate (-100vh) scale(2);
+    }
+}
+@keyframes animate {
+  0% {
+    transform: rotateX(45deg) rotateY(360deg);
+  }
+  50% {
+    transform: rotateX(90deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(45deg) rotateY(0deg);
+  }
+}
+/* ---------------- githb ----------------*/
+.github{
+   cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+  color: black;
+  padding: 12px 5px;
+
+  
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 1.25rem 0;
+    border: 1px solid white;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+
+    transition: all 0.3s ease-in-out;
+
+    svg {
+      width: 25px;
+      height: 35px;
+      color: black;
+    }
+
+    &:hover {
+           box-shadow: 0 0 0 2px white,
+    0 0 50px  black,
+    0 0 100px  black;     
+            animation: botao 133s linear infinite;
+
+      svg {
+        color: black;
+      }
+    }
+   
+    @media screen and (min-width: 2000px) {
+      width: 70px;
+      height: 70px;
+
+      margin: 0.5rem 0;
+
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+@keyframes botao {
+    0%{
+        transform: translateY(100vh) scale();
+    }
+   
+    50%{
+        transform: translateY(-100vh) scale(2);
+    }
+    100%{
+      transform: rotate (-100vh) scale(2);
+    }
+}
+
+
+/* ----------------youtube----------------*/
+
+.youtube{
+   cursor: pointer;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 12px 5px;
+  color: red;
+  
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 1.25rem 0;
+    border: 1px solid white;
+   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 12px;
+
+    transition: all 0.3s ease-in-out;
+
+    svg {
+      width: 25px;
+      height: 35px;
+      color: blue;
+    }
+
+    &:hover {
+           box-shadow: 0 0 0 1px white,
+    0 0 50px  red,
+    0 0 100px  red;     
+            animation: rodaryoutube 3s linear infinite;
+     
+
+  
+      svg {
+        color: red;
+      }
+    }
+   
+    @media screen and (min-width: 2000px) {
+      width: 70px;
+      height: 70px;
+
+      margin: 0.5rem 0;
+
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
+
+@keyframes rodaryoutube {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
