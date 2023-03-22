@@ -139,12 +139,128 @@
 }
 
 .app-home{
-  position: relative;
-  background-color: aquamarine;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
+
+    
 }
+
+.bolas{
+ 
+  margin-top: 12px;
+  margin-left: 234px;
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+.bolas span{
+  
+    flex-wrap: wrap;
+    width: 50px;
+    height: 50px;
+    background: rgb(0, 255, 4);
+    margin: 0 4px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #fafbfc77,
+    0 0 20px  rgb(0, 255, 4),
+    0 0 40px  rgb(0, 255, 4),
+    0 0 60px  rgb(0, 255, 4),
+    0 0 80px  rgb(0, 255, 4),
+    0 0 80px  rgb(0, 255, 4);
+    transform: rotate(calc(18deg * var(--i)));
+    animation: bolas 5s linear infinite;
+    animation-duration: calc(3s / var(--i));
+    animation: bola 2s linear infinite;;
+}
+@keyframes bola {
+  0%{
+    filter: hue-rotate(0deg);
+  }
+  
+  100%{
+    filter: hue-rotate(360deg);
+  }
+  
+}
+
+
+
+@keyframes bolas {
+    0%{
+        transform: translateY(100vh) scale(1);
+    }
+   
+   
+    100%{
+        transform: translateY(100vh) scale(0);
+    }
+}
+
+.app-home .quadrado {
+  width: 80px;
+  height: 80px;
+  margin-left: 3rem;
+  
+  flex-wrap: wrap;
+  flex-direction: column;
+  background-color: #f00;
+  transform: rotate(45deg) scale(0.7);
+  animation: rodaryoutube 7s linear infinite;
+}
+@keyframes rodaryoutube {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+.square {
+  width: 100px;
+  height: 100px;
+  margin-left: 42px;
+  margin-top: 12px;
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.square {
+  position: relative;
+  width: 100px;
+  height: 100px;
+  align-items: end;
+}
+
+.square::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+  transform: rotate(45deg);
+ 
+
+   animation: rodaryoutube 7s linear infinite;
+ 
+}
+@keyframes animates {
+  0% {
+    transform: translateY(120px) rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    transform: translateY(0px);
+  }
+  100% {
+    transform: translateY(120px) rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+
+
+
+
+
+
+
 
 .app-sobre{
 
