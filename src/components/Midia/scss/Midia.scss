@@ -1,0 +1,50 @@
+.linkedin{
+
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-direction: column;
+
+  padding: 12px 5px;
+
+  
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: white;
+    margin: 5.25rem 0;
+    border: 1px solid white;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: all 0.3s ease-in-out;
+
+    svg {
+      width: 25px;
+      height: 35px;
+      color: blue;
+    }
+
+    &:hover {
+      background-color: rgb(97, 97, 228);
+      border-color: black;
+
+      svg {
+        color: blue;
+      }
+    }
+
+    @media screen and (min-width: 2000px) {
+      width: 70px;
+      height: 70px;
+
+      margin: 0.5rem 0;
+
+      svg {
+        width: 30px;
+        height: 30px;
+      }
+    }
+  }
