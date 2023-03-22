@@ -11,9 +11,11 @@
 .app__container {
   width: 100%;
   min-height: 100vh;
-
+  padding:7px;
+  gap: 12px;
   display: flex;
   flex-direction: row;
+ 
 }
 
 .app__flex {
@@ -137,12 +139,16 @@
 }
 
 .app-home{
-  background-color: aqua;
-
+  position: relative;
+  background-color: aquamarine;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
 }
 
 .app-sobre{
 
+padding: 8px 22px;
 }
 
 .app-experiencia{
