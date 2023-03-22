@@ -1,18 +1,30 @@
-import React from 'react';
-import {  Sobre, Header,Experiencias, Projeto,  Footer } from './container';
-import { Navbar } from './components';
-import './App.scss'
+import React from "react";
+import { Sobre, Header, Experiencias, Projeto, Footer } from "./container";
+import { Navbar } from "./components";
+import "./App.scss";
 
 const App = () => {
   return (
-    <div className='app' >
-    <Navbar/>
-    <Header/>
-    <Sobre/>
-    <Experiencias/>
-    <Projeto/> 
-    <Footer/>
+    <div className="app">
+      <div className="app-navbar">
+        <Navbar />
+      </div>
+      <div className="app-home">
+        <Header />
+      </div>
+      <div className="app-sobre">
+        <Sobre />
+      </div>
+      <div className="app-experiencia">
+        <Experiencias />
+      </div>
+      <div className="app-projeto">
+        <Projeto />
+      </div>
+      <div className="app-footer">
+        <Footer />
+      </div>
     </div>
-  )
-}
+  );
+};
 export default App;
