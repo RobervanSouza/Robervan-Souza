@@ -5,28 +5,34 @@ import "./App.scss";
 import Home from "./container/home/Home";
 
 const App = () => {
-   const spanStyle = {
-     "--i": "1",
-   };
+  const spanStyle = {
+    "--i": "1",
+  };
   return (
     <div className="app">
       <div className="app-navbar">
         <Navbar />
       </div>
+
       <div className="app-home">
-        <div className="quadrado"></div>
-        <div className="bolas">
-          <span style={spanStyle}></span>
-        </div>
+        
+          <div className="quadrado"></div>
+          <div className="bolas">
+            <span style={spanStyle}></span>
+          </div>
           <Home />
-        <div className="square"></div>
+          <div className="square"></div>
+      
       </div>
+
       <div className="app-sobre">
         <Sobre />
       </div>
+
       <div className="app-experiencia">
         <Experiencias />
       </div>
+
       <div className="app-projeto">
         <Projeto />
       </div>
