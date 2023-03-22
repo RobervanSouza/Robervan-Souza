@@ -1,8 +1,8 @@
 import React from 'react'
-import "./Header.scss"; 
+import "./Home.scss"; 
 import { motion } from "framer-motion";
 import { images } from "../../constants";
-import AppWrap from '../../../src/wrapper/AppWrap'
+import AppWrap from '../../wrapper/AppWrap'
 
 const scalevariantes={
   whileInView: {
@@ -14,7 +14,7 @@ const scalevariantes={
     }
   }
 }
-function Header() {
+function Home() {
   return (
     <div id='home'  className="app__header app__flex">
       <motion.div
@@ -62,4 +62,4 @@ function Header() {
   );
 }
 
-export default  AppWrap(Header, 'home')
+export default  AppWrap(Home, 'home')

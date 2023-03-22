@@ -2,6 +2,7 @@ import React from "react";
 import { Sobre, Header, Experiencias, Projeto, Footer } from "./container";
 import { Navbar } from "./components";
 import "./App.scss";
+import Home from "./container/home/Home";
 
 const App = () => {
   return (
@@ -10,7 +11,7 @@ const App = () => {
         <Navbar />
       </div>
       <div className="app-home">
-        <Header />
+        <Home />
       </div>
       <div className="app-sobre">
         <Sobre />
