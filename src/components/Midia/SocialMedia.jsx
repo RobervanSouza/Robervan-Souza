@@ -1,4 +1,5 @@
-import React from 'react';
+
+
 import {  FaGithub, FaLinkedin, FaYoutube } from 'react-icons/fa';
 import "./scss/Midia.scss"
 const SocialMedia = () => (

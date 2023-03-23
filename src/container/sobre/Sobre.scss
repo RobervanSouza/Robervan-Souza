@@ -7,17 +7,18 @@
 .app__profiles {
     display: flex;
     justify-content: center;
-    align-items: flex-start;
+    align-items: center;
     flex-wrap: wrap;
-    margin-top: 2rem;
+    
+    
 }
 
 
 .app__profile-item {
     width: 190px;
     display: flex;
-    justify-content: flex-start;
-    align-items: flex-start;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     margin: 2rem;
     
@@ -49,5 +50,84 @@
   background-repeat: repeat;
 }
 .psobre{
-  
+
+  position: relative;
 }
+.simbolos{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+
+}
+.simbolos h1{
+  width: 93px;
+  height: 43px;
+  text-align: center;
+  justify-content: center;
+  display: flex;
+ 
+  animation: rodaryoutube 7s linear infinite;
+  font-size: 1.4rem;
+}
+
+@keyframes rodaryoutube {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
+
+.ilusao {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  background-color: red;
+  align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  font-size: 2.5rem;
+  color: white;
+  animation: rodarCirculo 8s linear infinite;
+  animation: animates 8.5s linear infinite;
+  box-sizing: border-box;
+
+   
+}
+
+.ilusao p{
+   align-items: center;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  transform: rotate(8deg);
+   animation: circulo2 8.5s linear infinite;
+   box-sizing: border-box;
+}
+@keyframes animates {
+  0% {
+    transform: translateY(120px) rotate(0deg);
+    filter: hue-rotate(0deg);
+  }
+  50% {
+    transform: translateY(3px);
+  }
+  100% {
+    transform: translateY(120px) rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+
+@keyframes rodarCirculo {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+

@@ -55,8 +55,6 @@ function Experiencias() {
     const [activeFilter, setActiveFilter] = useState("All");
     const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
-  
-
     const handleWorkFilter = (item) => {
       setActiveFilter(item);
       setAnimateCard([{ y: 100, opacity: 0 }]);
@@ -67,9 +65,10 @@ function Experiencias() {
           if (item === "All") {
             setFilterWork(experiencia);
           } else {
-            setFilterWork(experiencia.filter((work) => work.tags.includes(item)));
+            setFilterWork(experiencia.filter((work) => work.tags.includes(item)))
+            console.log(experiencia)
           }
-        }, 500);
+        },);
     };
   return (
     <>
@@ -79,7 +78,7 @@ function Experiencias() {
         </h2>
 
         <div className="app__work-filter">
-          {["UI/UX", "Web App", "Mobile App", "React JS", "All"].map(
+          {["Front-End UI/UX", "Web App", "Mobile App", "React JS", "All"].map(
             (item, index) => (
               <div
                 key={index}

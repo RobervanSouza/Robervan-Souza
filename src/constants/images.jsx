@@ -18,7 +18,7 @@ import redux from '../assets/redux.png';
 import sass from '../assets/sass.png';
 import typescript from '../assets/typescript.png';
 import vue from '../assets/vue.png';
-
+import fullstack from '../assets/full-stacker.jpg';
 import about01 from '../assets/about01.png';
 import about02 from '../assets/about02.png';
 import about03 from '../assets/about03.png';
@@ -36,8 +36,16 @@ import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
 import robervan from '../assets/robervan.jpeg';
-
+import mecatronica from '../assets/mecatronica.jpg';
+import cybersecurity from '../assets/ciberseguranca.jpg';
+import cursos from '../assets/programacao-linguagem.jpg';
+import logo1  from '../assets/logonome.png';
 export default {
+  logo1,
+  cursos,
+  cybersecurity,
+  mecatronica,
+  fullstack,
   robervan,
   email,
   mobile,
@@ -56,6 +64,7 @@ export default {
   react,
   redux,
   sass,
+  
   typescript,
   vue,
   about01,
