@@ -15,17 +15,16 @@ const App = () => {
       </div>
 
       <div className="app-home">
-        
-          <div className="quadrado"></div>
-          <div className="bolas">
-            <span style={spanStyle}></span>
-          </div>
-          <Home />
-          <div className="square"></div>
-      
+        <div className="quadrado"></div>
+        <div className="bolas">
+          <span style={spanStyle}></span>
+        </div>
+        <Home />
+        <div className="square"></div>
       </div>
 
       <div className="app-sobre">
+     
         <Sobre />
       </div>
 

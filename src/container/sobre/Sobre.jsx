@@ -1,5 +1,10 @@
 import React from 'react'
-import { BiArrowFromLeft, BiArrowFromRight, BiBullseye } from "react-icons/bi";
+import {
+  BiArrowFromLeft,
+  BiArrowFromRight,
+  BiBullseye,
+  BiCog,
+} from "react-icons/bi";
 import  './Sobre.scss';
 import {motion} from 'framer-motion';
 import { images } from "../../constants";
@@ -29,13 +34,15 @@ function Sobre() {
   
   return (
     <div id="sobre1" className="psobre">
+   
+      <div id="fundo"></div>
+
       <h2 className="head-text">
         <div className="simbolos">
           <h1>
             <BiArrowFromLeft /> <BiArrowFromRight />
           </h1>
         </div>
-        
         Tecnico Mecatrônico,
         <span> Desenvolvedor Full-Stack</span>
         <br />
@@ -47,14 +54,23 @@ function Sobre() {
             <BiArrowFromLeft /> <BiArrowFromRight />{" "}
           </h1>
         </div>
+        <div className="mecanica">
+          {" "}
+          <BiCog />
+        </div>
+        <div className="mecanica2">
+          <BiCog />
+        </div>
       </h2>
       <div className="app__profiles">
-        <p className="ilusao">
-          <p>
-            {" "}
-            <BiBullseye />{" "}
-          </p>{" "}
-        </p>
+        <div>
+          <p className="ilusao">
+            <p>
+              {" "}
+              <BiBullseye />{" "}
+            </p>{" "}
+          </p>
+        </div>
         {sobres.map((sobre, index) => (
           <motion.div
             whileInView={{ opacity: 1 }}
