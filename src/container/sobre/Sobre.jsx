@@ -33,62 +33,65 @@ function Sobre() {
 
   
   return (
-    <div id="sobre1" className="psobre">
-   
-      <div id="fundo"></div>
+    <>
+      <div id="sobre1" className="psobre">
+        <div id="fundo"></div>
 
-      <h2 className="head-text">
-        <div className="simbolos">
-          <h1>
-            <BiArrowFromLeft /> <BiArrowFromRight />
-          </h1>
-        </div>
-        Tecnico Mecatrônico,
-        <span> Desenvolvedor Full-Stack</span>
-        <br />
-        Cursando
-        <span> Cyber-Security</span>
-        <div className="simbolos">
-          <h1>
-            {" "}
-            <BiArrowFromLeft /> <BiArrowFromRight />{" "}
-          </h1>
-        </div>
-        <div className="mecanica">
-          {" "}
-          <BiCog />
-        </div>
-        <div className="mecanica2">
-          <BiCog />
-        </div>
-      </h2>
-      <div className="app__profiles">
-        <div>
-          <p className="ilusao">
-            <p>
+        <h2 className="head-text">
+          <div className="simbolos">
+            <h1>
+              <BiArrowFromLeft /> <BiArrowFromRight />
+            </h1>
+          </div>
+          Tecnico Mecatrônico,
+          <span> Desenvolvedor Full-Stack</span>
+          <br />
+          Cursando
+          <span> Cyber-Security.</span>
+          <div className="simbolos">
+            <h1>
               {" "}
-              <BiBullseye />{" "}
-            </p>{" "}
-          </p>
-        </div>
-        {sobres.map((sobre, index) => (
-          <motion.div
-            whileInView={{ opacity: 1 }}
-            whileHover={{ scale: 1.1 }}
-            transition={{ duration: 0.5, type: "tween" }}
-            className="app__profile-item"
-            key={sobre.titulo + index}>
-            <img src={sobre.imgUrl} alt={sobre.titulo} />
-            <h2 className="bold-text" style={{ marginTop: 20 }}>
-              {sobre.titulo}
-            </h2>
-            <p className="p-text" style={{ marginTop: 10 }}>
-              {sobre.descricao}
+              <BiArrowFromLeft /> <BiArrowFromRight />{" "}
+            </h1>
+          </div>
+          <div className="mecanica">
+            {" "}
+            <BiCog />
+          </div>
+          <div className="mecanica2">
+            <BiCog />
+          </div>
+        </h2>
+        <div className="app__profiles">
+          <div>
+            <p className="ilusao">
+              <p>
+                {" "}
+                <BiBullseye />{" "}
+              </p>{" "}
             </p>
-          </motion.div>
-        ))}
-      </div>
-    </div>
+          </div>
+          {sobres.map((sobre, index) => (
+            <motion.div
+              whileInView={{ opacity: 1 }}
+              whileHover={{ scale: 1.1 }}
+              transition={{ duration: 0.5, type: "tween" }}
+              className="app__profile-item"
+              key={sobre.titulo + index}>
+              <img src={sobre.imgUrl} alt={sobre.titulo} />
+              <h2 className="bold-text" style={{ marginTop: 20 }}>
+                {sobre.titulo}
+              </h2>
+              <p className="p-text" style={{ marginTop: 10 }}>
+                {sobre.descricao}
+              </p>
+            </motion.div>
+          ))}
+        </div>
+  
+        </div>
+      
+    </>
   );
 }
 

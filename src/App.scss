@@ -154,8 +154,8 @@
 .bolas span{
   
     flex-wrap: wrap;
-    width: 50px;
-    height: 50px;
+    width: 30px;
+    height: 30px;
     background: rgb(0, 255, 4);
     margin: 0 4px;
     border-radius: 50%;
@@ -195,15 +195,21 @@
 }
 
 .app-home .quadrado {
-  width: 80px;
-  height: 80px;
-  margin-left: 3rem;
-  
-  flex-wrap: wrap;
-  flex-direction: column;
-  background-color: #f00;
+  width: 40px;
+  height: 40px;
+
+  margin-bottom: 13px;
+ background-color: #385f8f ;
   transform: rotate(45deg) scale(0.7);
-  animation: rodaryoutube 7s linear infinite;
+  animation: rodaryoutube 21s linear infinite;
+ @media screen and (max-width: 400px) {
+  margin-top: 42px;
+  width: 30px;
+  height: 30px;
+  margin-left: 12px;
+  margin-bottom: 35px;
+  margin-left: 69px;
+ }
 }
 @keyframes rodaryoutube {
   from {
@@ -263,8 +269,41 @@
 
 
 .app-sobre{
-background-color: aquamarine;
+background-color: #385f8f ;
 padding: 8px 22px;
+
+@media screen and (max-width: 767px) {
+  @keyframes bolas {
+    0% {
+      transform: translateY(1683px) rotate(0deg);
+      filter: hue-rotate(0deg);
+    }
+    50% {
+      transform: translateY(3px);
+    }
+    100% {
+      transform: translateY(1683px) rotate(360deg);
+      filter: hue-rotate(360deg);
+    }
+  }
+}
+
+/* estilos para telas maiores */
+@media screen and (min-width: 768px) {
+  @keyframes bolas {
+    0% {
+      transform: translateY(689px) rotate(0deg);
+      filter: hue-rotate(0deg);
+    }
+    50% {
+      transform: translateY(3px);
+    }
+    100% {
+      transform: translateY(689px) rotate(360deg);
+      filter: hue-rotate(360deg);
+    }
+  }
+}
 }
 
 .app-experiencia{
@@ -275,5 +314,29 @@ padding: 8px 22px;
 
 }
 .app-footer{
+
+}
+
+.bolas1{
+    display: flex;
+    flex-wrap: wrap;    
+    z-index: 0;
+    flex-wrap: wrap;
+   
+}
+.bolas1 p{
+    
+    flex-wrap: wrap;
+    width: 10px;
+    height: 10px;
+    background: rgb(0, 255, 4);
+    margin: 0 15px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 2px #fafbfc77;
+    animation: bolas 85s linear infinite;
+    
+    animation-duration: calc(723s / var(--i));
+   
+
 
 }
