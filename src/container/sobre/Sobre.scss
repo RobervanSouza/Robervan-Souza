@@ -10,7 +10,7 @@
     justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    
+    z-index: 9;
     
 }
 
@@ -55,6 +55,7 @@
   background-repeat: repeat;
 }
 .psobre{
+background-color: #385f8f ;
 
   position: relative;
 }
@@ -209,5 +210,6 @@
     transform: rotateZ(0deg);
   }
 }
-
-
+.head-text{
+  z-index: 9;
+}

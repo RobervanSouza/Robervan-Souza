@@ -269,20 +269,21 @@
 
 
 .app-sobre{
-background-color: #385f8f ;
+
+ background-color: rgb(169, 164, 164);
 padding: 8px 22px;
 
 @media screen and (max-width: 767px) {
   @keyframes bolas {
     0% {
-      transform: translateY(1683px) rotate(0deg);
+      transform: translateY(1553px) rotate(0deg);
       filter: hue-rotate(0deg);
     }
     50% {
       transform: translateY(3px);
     }
     100% {
-      transform: translateY(1683px) rotate(360deg);
+      transform: translateY(1553px) rotate(360deg);
       filter: hue-rotate(360deg);
     }
   }
@@ -292,30 +293,20 @@ padding: 8px 22px;
 @media screen and (min-width: 768px) {
   @keyframes bolas {
     0% {
-      transform: translateY(689px) rotate(0deg);
+      transform: translateY(549px) rotate(0deg);
       filter: hue-rotate(0deg);
     }
     50% {
       transform: translateY(3px);
     }
     100% {
-      transform: translateY(689px) rotate(360deg);
+      transform: translateY(549px) rotate(360deg);
       filter: hue-rotate(360deg);
     }
   }
 }
 }
 
-.app-experiencia{
-
-}
-
-.app-projeto{
-
-}
-.app-footer{
-
-}
 
 .bolas1{
     display: flex;
