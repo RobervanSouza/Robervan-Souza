@@ -270,7 +270,7 @@
 
 .app-sobre{
 
- background-color: rgb(169, 164, 164);
+ background-color: var(--cor-fundo);
 padding: 8px 22px;
 
 @media screen and (max-width: 767px) {
@@ -330,4 +330,7 @@ padding: 8px 22px;
    
 
 
+}
+.app-experiencia{
+  background-color: var(--cor-fundo);
 }

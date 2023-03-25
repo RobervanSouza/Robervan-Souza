@@ -2,6 +2,15 @@
   flex: 1;
   width: 100%;
   flex-direction: column;
+
+}
+.experiencia{
+  background-color: var(--cor-frente);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+
 }
 
 .app__work-filter {
@@ -52,7 +61,7 @@
     flex-direction: column;
 
     margin: 2rem;
-    padding: 1rem;
+    padding: 2px;
     border-radius: 0.5rem;
     background-color: #fff;
     color: #000;
@@ -154,4 +163,3 @@
     top: -25px;
   }
 }
-

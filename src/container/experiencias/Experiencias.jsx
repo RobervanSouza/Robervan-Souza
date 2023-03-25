@@ -72,7 +72,7 @@ function Experiencias() {
     };
   return (
     <>
-      
+      <div className="experiencia">
         <h2 className="head-text">
           My Creative <span>Portfolio</span> Section
         </h2>
@@ -143,7 +143,7 @@ function Experiencias() {
             </div>
           ))}
         </motion.div>
-    
+      </div>
     </>
   );
 }
