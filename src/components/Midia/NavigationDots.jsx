@@ -1,18 +1,32 @@
-/* eslint-disable jsx-a11y/control-has-associated-label */
-/* eslint-disable jsx-a11y/anchor-has-content */
-
-import React from 'react';
-
+import "./scss/Midia.scss"
+import {
+  FcAbout,
+  
+  FcManager,
+  FcContacts,
+  FcElectronics,
+  FcRegisteredTrademark,
+} from "react-icons/fc";
 const NavigationDots = ({ active }) => (
   <div className="app__navigation">
-    {["home", "sobre","experiencias", "projetos", "contato"].map((itens, index) => (
+    {[
+      { name: "home", icon: <FcRegisteredTrademark size={27} /> },
+      { name: "sobre", icon: <FcAbout size={27} /> },
+      { name: "experiencias", icon: <FcManager size={27} /> },
+      { name: "projetos", icon: <FcElectronics size={27} /> },
+      { name: "contato", icon: <FcContacts size={27} /> },
+    ].map((item, index) => (
       <a
-        href={`#${itens}`}
-        key={itens + index}
+        href={`#${item.name}`}
+        key={item.name + index}
         className="app__navigation-dot"
-        style={active === itens ? { backgroundColor: "#313BAC" } : {}}/>
-       
-      
+        style={{
+          backgroundColor: active === item.name ? "#0ef51e" : "",
+        }}>
+        <div className="icones">
+          <p className="teste3">{item.icon}</p>
+        </div>
+      </a>
     ))}
   </div>
 );
