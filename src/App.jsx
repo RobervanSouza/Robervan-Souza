@@ -14,7 +14,7 @@ const App = () => {
         <Navbar />
       </div>
 
-      <div className="app-home">
+      <div className="app-home v1">
         <div className="quadrado"></div>
         <div className="bolas">
           <span style={spanStyle}></span>
