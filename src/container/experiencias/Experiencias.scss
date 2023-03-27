@@ -10,7 +10,57 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+  padding: 9px 9px;
+  position: relative;
+  border-radius: 12px;
+}
+.containerEx{
+  background-color: var(--cor-frente);
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding: 9px 9px;
+  border-radius: 12px;
+  z-index: 99;
+}
 
+.containerEx::before{
+  content: "";
+  position: absolute;
+  inset: -19px;
+  box-shadow:  0 0 0 8px var(--cor-frente);
+  pointer-events: none;
+  z-index: -1;
+  border-radius: 12px;
+  
+}
+.containerEx::after{
+  content: "";
+  position: absolute;
+  inset: -19px;
+  box-shadow:  0 0 0 8px var(--cor-frente);
+  pointer-events: none;
+  z-index: -1;
+  border-radius: 12px;
+  filter: none;
+}
+
+.experiencia .molduraCircular p {
+ position: absolute;
+ inset: -7px;
+ overflow: hidden;
+ width: 34px;
+
+ transform: rotate(calc(90deg * var(--i)));
+}
+.experiencia .molduraCircular p::before {
+  content: '';
+  position: absolute;
+ height: 3px;
+  overflow: hidden;
+  background-color: red;
+  pointer-events: none;
 }
 
 .app__work-filter {

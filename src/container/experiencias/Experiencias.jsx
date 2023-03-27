@@ -73,13 +73,25 @@ function Experiencias() {
   return (
     <>
       <div className="experiencia">
-        <h2 className="head-text">
-          My Creative <span>Portfolio</span> Section
-        </h2>
+        <div className="containerEx">
+          <div className="molduraCircular">
+            <p style={{ "--i": 0 }}></p>
+            <p style={{ "--i": 1 }}></p>
+            <p style={{ "--i": 2 }}></p>
+            <p style={{ "--i": 3 }}></p>
+          </div>
+          <h2 className="head-text">
+            Meus <span>Projetos</span>
+          </h2>
 
-        <div className="app__work-filter">
-          {["Front-End UI/UX", "Web App", "Mobile App", "React JS", "All"].map(
-            (item, index) => (
+          <div className="app__work-filter">
+            {[
+              "Front-End UI/UX",
+              "Web App",
+              "Mobile App",
+              "React JS",
+              "All",
+            ].map((item, index) => (
               <div
                 key={index}
                 onClick={() => handleWorkFilter(item)}
@@ -88,61 +100,61 @@ function Experiencias() {
                 }`}>
                 {item}
               </div>
-            )
-          )}
-        </div>
+            ))}
+          </div>
 
-        <motion.div
-          animate={animateCard}
-          transition={{ duration: 0.5, delayChildren: 0.5 }}
-          className="app__work-portfolio">
-          {filterWork.map((work, index) => (
-            <div className="app__work-item app__flex" key={index}>
-              <div className="app__work-img app__flex">
-                <img src={work.imgUrl} alt={work.name} />
+          <motion.div
+            animate={animateCard}
+            transition={{ duration: 0.5, delayChildren: 0.5 }}
+            className="app__work-portfolio">
+            {filterWork.map((work, index) => (
+              <div className="app__work-item app__flex" key={index}>
+                <div className="app__work-img app__flex">
+                  <img src={work.imgUrl} alt={work.name} />
 
-                <motion.div
-                  whileHover={{ opacity: [0, 1] }}
-                  transition={{
-                    duration: 0.25,
-                    ease: "easeInOut",
-                    staggerChildren: 0.5,
-                  }}
-                  className="app__work-hover app__flex">
-                  <a href={work.projectLink} target="_blank" rel="noreferrer">
-                    <motion.div
-                      whileInView={{ scale: [0, 1] }}
-                      whileHover={{ scale: [1, 0.9] }}
-                      transition={{ duration: 0.25 }}
-                      className="app__flex">
-                      <AiFillEye />
-                    </motion.div>
-                  </a>
-                  <a href={work.codeLink} target="_blank" rel="noreferrer">
-                    <motion.div
-                      whileInView={{ scale: [0, 1] }}
-                      whileHover={{ scale: [1, 0.9] }}
-                      transition={{ duration: 0.25 }}
-                      className="app__flex">
-                      <AiFillGithub />
-                    </motion.div>
-                  </a>
-                </motion.div>
-              </div>
+                  <motion.div
+                    whileHover={{ opacity: [0, 1] }}
+                    transition={{
+                      duration: 0.25,
+                      ease: "easeInOut",
+                      staggerChildren: 0.5,
+                    }}
+                    className="app__work-hover app__flex">
+                    <a href={work.projectLink} target="_blank" rel="noreferrer">
+                      <motion.div
+                        whileInView={{ scale: [0, 1] }}
+                        whileHover={{ scale: [1, 0.9] }}
+                        transition={{ duration: 0.25 }}
+                        className="app__flex">
+                        <AiFillEye />
+                      </motion.div>
+                    </a>
+                    <a href={work.codeLink} target="_blank" rel="noreferrer">
+                      <motion.div
+                        whileInView={{ scale: [0, 1] }}
+                        whileHover={{ scale: [1, 0.9] }}
+                        transition={{ duration: 0.25 }}
+                        className="app__flex">
+                        <AiFillGithub />
+                      </motion.div>
+                    </a>
+                  </motion.div>
+                </div>
 
-              <div className="app__work-content app__flex">
-                <h4 className="bold-text">{work.title}</h4>
-                <p className="p-text" style={{ marginTop: 10 }}>
-                  {work.description}
-                </p>
+                <div className="app__work-content app__flex">
+                  <h4 className="bold-text">{work.title}</h4>
+                  <h5 className="p-text" style={{ marginTop: 10 }}>
+                    {work.description}
+                  </h5>
 
-                <div className="app__work-tag app__flex">
-                  <p className="p-text">{work.tags[0]}</p>
+                  <div className="app__work-tag app__flex">
+                    <h5 className="p-text">{work.tags[0]}</h5>
+                  </div>
                 </div>
               </div>
-            </div>
-          ))}
-        </motion.div>
+            ))}
+          </motion.div>
+        </div>
       </div>
     </>
   );
