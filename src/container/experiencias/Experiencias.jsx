@@ -11,13 +11,13 @@ import AppWrap from '../../wrapper/AppWrap';
 
 const experiencia = [
   {
-    title: "teste",
-    description: "teste",
+    title: "Rick-And-Mortin",
+    description: "Html, Css, e JavaScript",
     name: "Desenvolvedor",
-    projectLink: "full-stack",
-    imgUrl: images.about01,
-    codeLink: "https://github.com/RobervanSouza",
-    tags: ["Web App", "All"],
+    projectLink: "https://github.com/RobervanSouza",
+    imgUrl: images.rick,
+    codeLink: "https://github.com/RobervanSouza/api-rick-and-mortin-javascript",
+    tags: ["Front-End", "Todos"],
   },
   {
     title: "teste",
@@ -26,7 +26,7 @@ const experiencia = [
     projectLink: "full-stack",
     imgUrl: images.about02,
     codeLink: "",
-    tags: ["React JS", "All"],
+    tags: ["React JS", "Todos"],
   },
   {
     title: "teste",
@@ -35,7 +35,7 @@ const experiencia = [
     projectLink: "full-stack",
     imgUrl: images.about03,
     codeLink: "",
-    tags: ["UI/UX", "All"],
+    tags: ["UI/UX", "Todos"],
   },
   {
     title: "teste",
@@ -44,7 +44,7 @@ const experiencia = [
     projectLink: "full-stack",
     imgUrl: images.about03,
     codeLink: "",
-    tags: ["Mobile App", "All"],
+    tags: ["Mobile App", "Todos"],
   },
 ];
 
@@ -74,23 +74,18 @@ function Experiencias() {
     <>
       <div className="experiencia">
         <div className="containerEx">
-          <div className="molduraCircular">
-            <p style={{ "--i": 0 }}></p>
-            <p style={{ "--i": 1 }}></p>
-            <p style={{ "--i": 2 }}></p>
-            <p style={{ "--i": 3 }}></p>
-          </div>
+        
           <h2 className="head-text">
             Meus <span>Projetos</span>
           </h2>
 
           <div className="app__work-filter">
             {[
-              "Front-End UI/UX",
-              "Web App",
+              "Front-End",
+              "Back-End",
+              "Full-Stack",
               "Mobile App",
-              "React JS",
-              "All",
+              "Todos",
             ].map((item, index) => (
               <div
                 key={index}
@@ -125,9 +120,10 @@ function Experiencias() {
                         whileInView={{ scale: [0, 1] }}
                         whileHover={{ scale: [1, 0.9] }}
                         transition={{ duration: 0.25 }}
-                        className="app__flex">
+                        className="app__flex">                        
                         <AiFillEye />
                       </motion.div>
+                     
                     </a>
                     <a href={work.codeLink} target="_blank" rel="noreferrer">
                       <motion.div
@@ -142,9 +138,9 @@ function Experiencias() {
                 </div>
 
                 <div className="app__work-content app__flex">
-                  <h4 className="bold-text">{work.title}</h4>
+                  <h4 className="bold-text">Titulo: {work.title}</h4>
                   <h5 className="p-text" style={{ marginTop: 10 }}>
-                    {work.description}
+                  Tecnologias utilizadas:  {work.description}
                   </h5>
 
                   <div className="app__work-tag app__flex">

@@ -73,8 +73,8 @@ function Sobre() {
             </h1>
           </div>
           Tecnico Mecatrônico,
-          <span> Desenvolvedor Full-Stack</span>
-          <br />
+          <span> Desenvolvedor Full-Stack </span>
+          <br /> E 
           Cursando
           <span> Cyber-Security.</span>
           <div className="simbolos">

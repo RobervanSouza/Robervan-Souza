@@ -101,26 +101,31 @@
   }
 }
 
+.app__work-filter:hover{
+  background-color: var(--cor-fundo);
+  border-radius: 10px;
+}
 .app__work-portfolio {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   align-items: center;
-
+ 
   .app__work-item {
     width: 270px;
     flex-direction: column;
-
+    
     margin: 2rem;
     padding: 2px;
     border-radius: 0.5rem;
     background-color: #ffffffd1;
     color: #000;
-    border: #000;
+     border: 2px solid rgb(6, 242, 6);
     cursor: pointer;
     transition: all 0.3s ease;
 
     &:hover {
+       border: 2px solid rgb(5, 5, 5);
       box-shadow: 0 0 25px rgba(234, 220, 220, 6.2);
     }
 
@@ -140,9 +145,9 @@
 .app__work-img {
   width: 100%;
   height: 230px;
-
+  border: 3px solid rgb(5, 5, 5);
   position: relative;
-
+border-radius: 0.5rem;
   img {
     width: 100%;
     height: 100%;
@@ -154,6 +159,11 @@
     height: 350px;
   }
 }
+.app__work-img:hover {
+ 
+  border: 2px solid rgb(8, 239, 47);
+
+}
 
 .app__work-hover {
   position: absolute;
@@ -163,7 +173,7 @@
   right: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.078);
 
   border-radius: 0.5rem;
   opacity: 0;
@@ -207,10 +217,11 @@
 
   .app__work-tag {
     position: absolute;
-
+     border: 3px solid var(--cor-frente);
     padding: 0.5rem 1rem;
     border-radius: 10px;
     background-color: #fff;
-    top: -25px;
+    top: -23px;
   }
+
 }

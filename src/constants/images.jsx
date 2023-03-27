@@ -23,7 +23,7 @@ import about01 from '../assets/about01.png';
 import about02 from '../assets/about02.png';
 import about03 from '../assets/about03.png';
 import about04 from '../assets/about04.png';
-
+import rick from '../assets/rick-and-martin.png';
 import profile from '../assets/profile.png';
 import circle from '../assets/circle.svg';
 import logo from '../assets/logo.png';
@@ -41,6 +41,7 @@ import cybersecurity from '../assets/ciberseguranca.jpg';
 import cursos from '../assets/programacao-linguagem.jpg';
 import logo1  from '../assets/logonome.png';
 export default {
+  rick,
   logo1,
   cursos,
   cybersecurity,
