@@ -12,6 +12,7 @@ const SocialMedia = () => (
         <FaLinkedin />
       </a>
     </div>
+
     <div>
       <a
         href="https://github.com/RobervanSouza"
@@ -20,6 +21,7 @@ const SocialMedia = () => (
         <FaGithub className="github" />
       </a>
     </div>
+
     <div>
       <a
         href="https://www.youtube.com/@robervansouza4546/videos"
@@ -29,6 +31,7 @@ const SocialMedia = () => (
       <FaYoutube className="youtube" />
       </a>
     </div>
+    
   </div>
 );
 

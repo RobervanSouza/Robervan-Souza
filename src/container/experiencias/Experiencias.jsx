@@ -74,28 +74,23 @@ function Experiencias() {
     <>
       <div className="experiencia">
         <div className="containerEx">
-        
           <h2 className="head-text">
             Meus <span>Projetos</span>
           </h2>
 
           <div className="app__work-filter">
-            {[
-              "Front-End",
-              "Back-End",
-              "Full-Stack",
-              "Mobile App",
-              "Todos",
-            ].map((item, index) => (
-              <div
-                key={index}
-                onClick={() => handleWorkFilter(item)}
-                className={`app__work-filter-item app__flex p-text ${
-                  activeFilter === item ? "item-active" : ""
-                }`}>
-                {item}
-              </div>
-            ))}
+            {["Front-End", "Back-End", "Full-Stack", "Mobile App", "Todos"].map(
+              (item, index) => (
+                <div
+                  key={index}
+                  onClick={() => handleWorkFilter(item)}
+                  className={`app__work-filter-item app__flex p-text ${
+                    activeFilter === item ? "item-active" : ""
+                  }`}>
+                  {item}
+                </div>
+              )
+            )}
           </div>
 
           <motion.div
@@ -120,10 +115,9 @@ function Experiencias() {
                         whileInView={{ scale: [0, 1] }}
                         whileHover={{ scale: [1, 0.9] }}
                         transition={{ duration: 0.25 }}
-                        className="app__flex">                        
+                        className="app__flex">
                         <AiFillEye />
                       </motion.div>
-                     
                     </a>
                     <a href={work.codeLink} target="_blank" rel="noreferrer">
                       <motion.div
@@ -138,10 +132,12 @@ function Experiencias() {
                 </div>
 
                 <div className="app__work-content app__flex">
-                  <h4 className="bold-text">Titulo: {work.title}</h4>
-                  <h5 className="p-text" style={{ marginTop: 10 }}>
-                  Tecnologias utilizadas:  {work.description}
-                  </h5>
+                  <h4 className="bold-text">
+                    Titulo: <span>{work.title}</span>
+                  </h4>
+                  <h4 className="p-text" style={{ marginTop: 10 }}>
+                    Tecnologias utilizadas: <span> {work.description} </span>
+                  </h4>
 
                   <div className="app__work-tag app__flex">
                     <h5 className="p-text">{work.tags[0]}</h5>

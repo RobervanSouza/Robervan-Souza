@@ -13,6 +13,15 @@
   padding: 9px 9px;
   position: relative;
   border-radius: 12px;
+   @media screen and (max-width: 400px) {
+       background-color: var(--cor-frente);
+      width: 86%;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      display: flex;
+    }
+  
 }
 .containerEx{
   background-color: var(--cor-frente);
@@ -23,6 +32,10 @@
   padding: 9px 9px;
   border-radius: 12px;
   z-index: 99;
+    @media screen and (max-width: 400px) {
+     
+      width: 80%;
+    }
 }
 
 .containerEx::before{
@@ -33,6 +46,11 @@
   pointer-events: none;
   z-index: -1;
   border-radius: 12px;
+   @media screen and (max-width: 400px) {
+     
+   
+
+    }
   
 }
 .containerEx::after{
@@ -44,6 +62,11 @@
   z-index: -1;
   border-radius: 12px;
   filter: none;
+  @media screen and (max-width: 400px) {
+      
+   
+
+    }
 }
 
 .experiencia .molduraCircular p {
@@ -53,6 +76,7 @@
  width: 34px;
 
  transform: rotate(calc(90deg * var(--i)));
+ 
 }
 .experiencia .molduraCircular p::before {
   content: '';
@@ -69,8 +93,15 @@
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
-
   margin: 4rem 0 2rem;
+   @media screen and (max-width: 400px) {
+      background-color: var(--cor-frente);
+      width: 86%;
+      align-items: center;
+      justify-content: center;
+      flex-direction: column;
+      display: flex;
+    }
 
   .app__work-filter-item {
     padding: 0.5rem 1rem;
@@ -104,6 +135,7 @@
 .app__work-filter:hover{
   background-color: var(--cor-fundo);
   border-radius: 10px;
+ 
 }
 .app__work-portfolio {
   display: flex;
@@ -205,6 +237,7 @@ border-radius: 0.5rem;
   width: 100%;
   position: relative;
   flex-direction: column;
+  
 
   h4 {
     margin-top: 1rem;
@@ -224,4 +257,13 @@ border-radius: 0.5rem;
     top: -23px;
   }
 
+}
+.app__work-content h4{
+  color: black;
+  font-size: 1.2rem;
+  
+}
+.app__work-content span{
+  color: var(--cor-frente);
+  
 }
