@@ -23,7 +23,10 @@ function Navbar() {
         )}
       </ul>
       <div className="app__navbar-menu">
+        
+
         <HiOutlineMenuAlt4 onClick={() => setMenu(true)} />
+        
         {menu && (
           <motion.div
             whileInView={{ x: [100, 0] }}

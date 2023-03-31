@@ -144,11 +144,15 @@
 
 }
 .bolas{
- margin-top: -5rem;
+ margin-top: -3rem;
  margin-bottom: 2rem;
   margin-left: 234px;
-    display: flex;
-    flex-wrap: wrap;
+ display: flex;
+ flex-wrap: wrap;
+
+@media screen and (max-width: 908px) {
+display: none;
+}
    
 }
 .bolas span{
@@ -181,6 +185,13 @@
   
 }
 
+.teste12{
+
+  align-items: center;
+  justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+}
 
 
 @keyframes bolas {
@@ -197,7 +208,7 @@
 .app-home .quadrado {
   width: 40px;
   height: 40px;
-
+  margin-left: 6rem;
   margin-bottom: 13px;
  background-color: #385f8f ;
   transform: rotate(45deg) scale(0.7);
