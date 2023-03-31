@@ -13,20 +13,20 @@ import AppWrap from '../../wrapper/AppWrap';
 const sobres = [
   {
     titulo: "Desenvolvedor Full-Stack",
-    descricao: "A definição de Desenvolvedor Full Stack pode ser resumida como alguém capaz de trabalhar tanto no back-end quanto no front-end de sistemas. Isso significa que o profisional pode desenvolver plataformas completas (com bancos de dados, servidores e clientes) que não precisam de outros aplicativos para funcionar",
+    descricao: "Formação desenvolvedor full-stack na BlueEdTech",
     imgUrl: images.fullstack,
   },
   {
-    titulo: "Tecnico Mecatrônico",
-    descricao: "Formado com ampla experiência",
+    titulo: "Técnico Mecatrônico",
+    descricao: "Formado no Cepep com ampla experiêcia em programação de maquina e robô.",
     imgUrl: images.mecatronica,
   },
   {
     titulo: "Cyber-Security",
-    descricao: "Cursando cyber-security ",
+    descricao: "Cursando cyber-security ne escola Técnica de Invasão ",
     imgUrl: images.cybersecurity,
   },
-  { titulo: "Cursos Complementares", descricao: "Varios sfd sfferfgdfgdsgfsdgd dgfd sgfsdgf sdgf sdg fdsf g sdfg ds gfd sfg sdf gds gf sdf g cursos complementares", imgUrl: images.cursos },
+  { titulo: "Cursos Complementares", descricao: " Cursos de Linux, Python, C#,  css e html.", imgUrl: images.cursos },
 ];
 
 function Sobre() {
