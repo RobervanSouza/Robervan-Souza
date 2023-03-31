@@ -11,6 +11,7 @@
     align-items: center;
     flex-wrap: wrap;
     z-index: 9;
+    box-sizing: border-box;
     
     
 }
@@ -23,7 +24,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
- 
+    z-index: 99;
     flex-wrap: wrap;
     flex-direction: column;
     margin: 2rem;
@@ -114,6 +115,7 @@ background-color: var(--cor-frente);
 
 }
 .simbolos h1{
+    
   width: 93px;
   height: 43px;
   text-align: center;
@@ -143,7 +145,7 @@ background-color: var(--cor-frente);
   position: relative;
   width: 40px;
   height: 40px;
-  background-color: red;
+  
   align-items: center;
   text-align: center;
   display: flex;
@@ -151,9 +153,10 @@ background-color: var(--cor-frente);
   font-size: 2.5rem;
   color: white;
   margin-left: 13px;
-  animation: animates1 22.5s linear infinite;
+  animation: animates1 42.5s linear infinite;
   box-sizing: border-box;
   margin-top: -340px;
+  gap: 12px;
   @media screen and (width: 1000px) {
    
     display: none;
@@ -174,17 +177,27 @@ background-color: var(--cor-frente);
    
 }
 @keyframes animates1 {
-  0% {
-    transform: translateY(430px) rotate(0deg);
-    filter: hue-rotate(0deg);
-  }
-  50% {
-    transform: translateY(3px);
-  }
-  100% {
-    transform: translateY(430px) rotate(360deg);
-    filter: hue-rotate(360deg);
-  }
+ 0%{
+  left: 0;
+  top: 0;
+  
+ }
+ 25%{
+  left: 1019px;
+  top: 0;
+ }
+ 50%{
+  left: 1019px;
+  top: 435px;
+ }
+ 75%{
+  left: 0px;
+  top: 435px;
+ }
+ 100%{
+  left: 0px;
+  top: 0px;
+ }
 }
 
 @keyframes rodarCirculo {
@@ -212,7 +225,7 @@ background-color: var(--cor-frente);
   align-items: center;
   justify-content: center;
   margin-left: 65px;
- 
+
   transition: all 0.3s ease-in-out;
  animation: rodaryoutube 9.5s linear infinite;
    

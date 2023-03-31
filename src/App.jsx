@@ -15,7 +15,7 @@ const App = () => {
       </div>
 
       <div className="app-home v1">
-        <div className="teste12">
+        <div className="div-bolas">
 
         <div className="quadrado"></div>
         <div className="bolas">
