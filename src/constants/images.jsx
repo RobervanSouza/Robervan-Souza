@@ -1,4 +1,5 @@
 /* eslint-disable import/no-anonymous-default-export */
+import vigilantes from "../assets/vigilante-do-sono.png"
 import email from '../assets/email.png';
 import mobile from '../assets/mobile.png';
 import api from '../assets/api.png';
@@ -41,6 +42,7 @@ import cybersecurity from '../assets/ciberseguranca.jpg';
 import cursos from '../assets/programacao-linguagem.jpg';
 import logo1  from '../assets/logonome.png';
 export default {
+  vigilantes,
   rick,
   logo1,
   cursos,

@@ -20,13 +20,22 @@ const experiencia = [
     tags: ["Front-End", "Todos"],
   },
   {
+    title: "Vigilantes do sono",
+    description: "Html, Css, e JavaScript",
+    name: "Desenvolvedor",
+    projectLink: "https://github.com/RobervanSouza",
+    imgUrl: images.vigilantes,
+    codeLink: "https://github.com/RobervanSouza/api-rick-and-mortin-javascript",
+    tags: ["Front-End", "Todos"],
+  },
+  {
     title: "teste",
     description: "teste",
     name: "Desenvolvedor",
     projectLink: "full-stack",
     imgUrl: images.about02,
     codeLink: "",
-    tags: ["React JS", "Todos"],
+    tags: ["Back-End", "Todos"],
   },
   {
     title: "teste",
@@ -35,7 +44,7 @@ const experiencia = [
     projectLink: "full-stack",
     imgUrl: images.about03,
     codeLink: "",
-    tags: ["UI/UX", "Todos"],
+    tags: ["Full-Stack", "Todos"],
   },
   {
     title: "teste",
