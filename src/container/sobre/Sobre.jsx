@@ -23,10 +23,10 @@ const sobres = [
   },
   {
     titulo: "Cyber-Security",
-    descricao: "Cursando cyber-security",
+    descricao: "Cursando cyber-security ",
     imgUrl: images.cybersecurity,
   },
-  { titulo: "Cursos Complementares", descricao: "Varios cursos complementares", imgUrl: images.cursos },
+  { titulo: "Cursos Complementares", descricao: "Varios sfd sfferfgdfgdsgfsdgd dgfd sgfsdgf sdgf sdg fdsf g sdfg ds gfd sfg sdf gds gf sdf g cursos complementares", imgUrl: images.cursos },
 ];
 
 function Sobre() {
@@ -74,8 +74,7 @@ function Sobre() {
           </div>
           Tecnico Mecatrônico,
           <span> Desenvolvedor Full-Stack </span>
-          <br /> E 
-          Cursando
+          <br /> E Cursando
           <span> Cyber-Security.</span>
           <div className="simbolos">
             <h1>
@@ -108,12 +107,14 @@ function Sobre() {
               className="app__profile-item"
               key={sobre.titulo + index}>
               <img src={sobre.imgUrl} alt={sobre.titulo} />
-              <h2 className="bold-text" style={{ marginTop: 20 }}>
-                {sobre.titulo}
-              </h2>
-              <p className="p-text" style={{ marginTop: 10 }}>
-                {sobre.descricao}
-              </p>
+              <div className="texto">
+                <h2 className="bold-text" style={{ marginTop: 10 }}>
+                  {sobre.titulo}
+                </h2>
+                <p className="p-text" style={{ marginTop: 10 }}>
+                  {sobre.descricao}
+                </p>
+              </div>
             </motion.div>
           ))}
         </div>
