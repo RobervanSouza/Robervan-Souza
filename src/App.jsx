@@ -20,7 +20,7 @@ const App = () => {
           <span style={spanStyle}></span>
         </div>
         <Home />
-        <div className="square"></div>
+      
       </div>
 
       <div className="app-sobre">

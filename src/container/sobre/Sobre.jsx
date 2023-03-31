@@ -13,7 +13,7 @@ import AppWrap from '../../wrapper/AppWrap';
 const sobres = [
   {
     titulo: "Desenvolvedor Full-Stack",
-    descricao: "Desenvolvedor de web sites",
+    descricao: "A definição de Desenvolvedor Full Stack pode ser resumida como alguém capaz de trabalhar tanto no back-end quanto no front-end de sistemas. Isso significa que o profisional pode desenvolver plataformas completas (com bancos de dados, servidores e clientes) que não precisam de outros aplicativos para funcionar",
     imgUrl: images.fullstack,
   },
   {
@@ -47,24 +47,7 @@ function Sobre() {
           <p style={{ "--i": 3 }}></p>
           <p style={{ "--i": 13 }}></p>
           <p style={{ "--i": 23 }}></p>
-          <p style={{ "--i": 4 }}></p>
-          <p style={{ "--i": 14 }}></p>
-          <p style={{ "--i": 24 }}></p>
-          <p style={{ "--i": 5 }}></p>
-          <p style={{ "--i": 15 }}></p>
-          <p style={{ "--i": 25 }}></p>
-          <p style={{ "--i": 6 }}></p>
-          <p style={{ "--i": 16 }}></p>
-          <p style={{ "--i": 26 }}></p>
-          <p style={{ "--i": 7 }}></p>
-          <p style={{ "--i": 17 }}></p>
-          <p style={{ "--i": 27 }}></p>
-          <p style={{ "--i": 8 }}></p>
-          <p style={{ "--i": 18 }}></p>
-          <p style={{ "--i": 28 }}></p>
-          <p style={{ "--i": 9 }}></p>
-          <p style={{ "--i": 19 }}></p>
-          <p style={{ "--i": 29 }}></p>
+       
         </div>
         <h2 className="head-text">
           <div className="simbolos">
@@ -72,15 +55,12 @@ function Sobre() {
               <BiArrowFromLeft /> <BiArrowFromRight />
             </h1>
           </div>
-          Tecnico Mecatrônico,
+          Técnico Mecatrônico,
           <span> Desenvolvedor Full-Stack </span>
           <br /> E Cursando
           <span> Cyber-Security.</span>
           <div className="simbolos">
-            <h1>
-              {" "}
-              <BiArrowFromLeft /> <BiArrowFromRight />{" "}
-            </h1>
+           
           </div>
           <div className="mecanica">
             {" "}

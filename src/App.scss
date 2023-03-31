@@ -273,17 +273,19 @@
  background-color: var(--cor-fundo);
 padding: 8px 22px;
 
+
+/* estilos para telas menores */
 @media screen and (max-width: 767px) {
   @keyframes bolas {
     0% {
-      transform: translateY(1553px) rotate(0deg);
+      transform: translateY(1343px) rotate(0deg);
       filter: hue-rotate(0deg);
     }
     50% {
       transform: translateY(3px);
     }
     100% {
-      transform: translateY(1553px) rotate(360deg);
+      transform: translateY(1343px) rotate(360deg);
       filter: hue-rotate(360deg);
     }
   }
@@ -291,16 +293,17 @@ padding: 8px 22px;
 
 /* estilos para telas maiores */
 @media screen and (min-width: 768px) {
+  flex-wrap: wrap;
   @keyframes bolas {
     0% {
-      transform: translateY(549px) rotate(0deg);
+      transform: translateY(449px) rotate(0deg);
       filter: hue-rotate(0deg);
     }
     50% {
       transform: translateY(3px);
     }
     100% {
-      transform: translateY(549px) rotate(360deg);
+      transform: translateY(449px) rotate(360deg);
       filter: hue-rotate(360deg);
     }
   }
@@ -312,21 +315,22 @@ padding: 8px 22px;
     display: flex;
     flex-wrap: wrap;    
     z-index: 0;
-    flex-wrap: wrap;
+    justify-content: space-between;
    
+    width: 100%;
 }
 .bolas1 p{
     
     flex-wrap: wrap;
     width: 10px;
     height: 10px;
-    background: rgb(0, 255, 4);
+    
     margin: 0 15px;
     border-radius: 50%;
-    box-shadow: 0 0 0 2px #fafbfc77;
-    animation: bolas 85s linear infinite;
+    box-shadow: 0 0 0 2px #fafafe;
+    animation: bolas 5s linear infinite;
     
-    animation-duration: calc(723s / var(--i));
+    animation-duration: calc(223s / var(--i));
    
 
 

@@ -17,12 +17,14 @@
 
 
 .app__profile-item {
-
+    cursor: pointer;
+    margin-bottom: 4rem;
     width: 190px;
     display: flex;
     justify-content: center;
     align-items: center;
-    
+ 
+    flex-wrap: wrap;
     flex-direction: column;
     margin: 2rem;
    background-color: var(--cor-fundo);
@@ -53,6 +55,9 @@
   }
 }
 
+.app__profile-item:hover{
+  margin-top: 4rem;
+}
 .app__profile-item:hover img{
   
   top: -60px ;
@@ -70,7 +75,8 @@
 }
 
 .app__profile-item:hover .texto {
-  margin-top: -3rem;
+  margin-top: -5rem;
+  margin-bottom: 4px;
  
   
 }
@@ -135,8 +141,8 @@ background-color: var(--cor-frente);
 
 .ilusao {
   position: relative;
-  width: 50px;
-  height: 50px;
+  width: 40px;
+  height: 40px;
   background-color: red;
   align-items: center;
   text-align: center;
@@ -144,11 +150,11 @@ background-color: var(--cor-frente);
   justify-content: center;
   font-size: 2.5rem;
   color: white;
-  
-  animation: animates1 8.5s linear infinite;
+  margin-left: 13px;
+  animation: animates1 22.5s linear infinite;
   box-sizing: border-box;
-  
-  @media screen and (width: 200px) {
+  margin-top: -340px;
+  @media screen and (width: 1000px) {
    
     display: none;
 
@@ -165,17 +171,18 @@ background-color: var(--cor-frente);
   justify-content: center;
   transform: rotate(8deg);
    box-sizing: border-box;
+   
 }
 @keyframes animates1 {
   0% {
-    transform: translateY(120px) rotate(0deg);
+    transform: translateY(430px) rotate(0deg);
     filter: hue-rotate(0deg);
   }
   50% {
     transform: translateY(3px);
   }
   100% {
-    transform: translateY(120px) rotate(360deg);
+    transform: translateY(430px) rotate(360deg);
     filter: hue-rotate(360deg);
   }
 }
