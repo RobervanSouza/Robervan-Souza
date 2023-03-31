@@ -66,6 +66,15 @@
   }
 }
 
+.texto{
+  align-items: center;
+  justify-content: center;
+
+  display: flex;
+  flex-direction: column;
+
+}
+
 .app__profile-item:hover{
   margin-top: 4rem;
   border: 2px solid black;
@@ -80,7 +89,11 @@
   margin-left: 5px;
 }
 
-.app__profile-item:hover .texto p {
+.app__profile-item:hover .texto button{
+  display: none;
+}
+
+.app__profile-item:hover .texto p{
   display: block;
   text-align: center;
 

@@ -91,6 +91,7 @@ function Sobre() {
                 <h2 className="bold-text" style={{ marginTop: 10 }}>
                   {sobre.titulo}
                 </h2>
+                <button>Mais informações</button>
                 <p className="p-text" style={{ marginTop: 10 }}>
                   {sobre.descricao}
                 </p>

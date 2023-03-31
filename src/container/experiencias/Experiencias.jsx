@@ -13,7 +13,7 @@ const experiencia = [
   {
     title: "Rick-And-Mortin",
     description: "Html, Css, e JavaScript",
-    name: "Desenvolvedor",
+    tecnologias: "Html, Css, e JavaScript",
     projectLink: "https://github.com/RobervanSouza",
     imgUrl: images.rick,
     codeLink: "https://github.com/RobervanSouza/api-rick-and-mortin-javascript",
@@ -22,7 +22,7 @@ const experiencia = [
   {
     title: "Vigilantes do sono",
     description: "Html, Css, e JavaScript",
-    name: "Desenvolvedor",
+    tecnologias: "Html, Css, e JavaScript",
     projectLink: "https://github.com/RobervanSouza",
     imgUrl: images.vigilantes,
     codeLink: "https://github.com/RobervanSouza/api-rick-and-mortin-javascript",
@@ -31,7 +31,7 @@ const experiencia = [
   {
     title: "teste",
     description: "teste",
-    name: "Desenvolvedor",
+    tecnologias: "Desenvolvedor",
     projectLink: "full-stack",
     imgUrl: images.about02,
     codeLink: "",
@@ -40,7 +40,7 @@ const experiencia = [
   {
     title: "teste",
     description: "teste",
-    name: "Desenvolvedor",
+    tecnologias: "Desenvolvedor",
     projectLink: "full-stack",
     imgUrl: images.about03,
     codeLink: "",
@@ -49,7 +49,7 @@ const experiencia = [
   {
     title: "teste",
     description: "teste",
-    name: "Desenvolvedor",
+    tecnologias: "Desenvolvedor",
     projectLink: "full-stack",
     imgUrl: images.about03,
     codeLink: "",
@@ -144,8 +144,8 @@ function Experiencias() {
                   <h4 className="bold-text">
                     Titulo: <span>{work.title}</span>
                   </h4>
-                  <h4 className="p-text" style={{ marginTop: 10 }}>
-                    Tecnologias utilizadas: <span> {work.description} </span>
+                  <h4 className="p-text" style={{ marginTop: 5 }}>
+                    Tecnologias: <span> {work.tecnologias} </span>
                   </h4>
 
                   <div className="app__work-tag app__flex">
