@@ -12,6 +12,8 @@
     flex-wrap: wrap;
     z-index: 9;
     box-sizing: border-box;
+    margin-bottom: 12px;
+    margin-right: 16px;
     
     
 }
@@ -20,7 +22,7 @@
 .app__profile-item {
   
     cursor: pointer;
-    margin-bottom: 4rem;
+  
     width: 190px;
     display: flex;
     justify-content: center;
@@ -117,7 +119,8 @@
  background-size: cover;
  background-position: center;
  background-repeat: repeat;
- 
+
+
 }
 .psobre{
   background-color: var(--cor-frente);
@@ -160,10 +163,11 @@
 
 
 .ilusao {
+  max-height: min-content;
   position: relative;
   width: 40px;
   height: 40px;
-  
+  z-index: -1;
   align-items: center;
   text-align: center;
   display: flex;
@@ -171,52 +175,348 @@
   font-size: 2.5rem;
   color: white;
   margin-left: 13px;
-  animation: animates1 42.5s linear infinite;
+ 
   box-sizing: border-box;
   margin-top: -349px;
   gap: 12px;
-  @media screen and (width: 1000px) {
-   
-    display: none;
-
-  }
+ 
 
    
 }
+// maior que 2000
+  @media screen and (max-width: 2000px) {
+ .ilusao{
+  animation: animates1-resp 12.5s linear infinite;
+  z-index: -1;
+  
+ }
+  @keyframes animates1-resp {
+    0% {
+      left:0;
+      top: 0;
+    }
+    25% {
+      left: 1029px;
+      top: 0;
+    }
+    50% {
+      left: 1029px;
+      top: 470px;
+    }
+    75% {
+      left: 0px;
+      top: 470px;
+    }
+    100% {
+      left: 0px;
+      top: 0;
+    }
+  }
+    
+
+  }
+  // maior que 1280
+  @media screen and (max-width: 1324px) {
+ .ilusao{
+  animation: animates1-resp 12.5s linear infinite;
+  z-index: -1;
+ }
+  @keyframes animates1-resp {
+    0% {
+      left:-102px;
+      top: 0;
+    }
+    25% {
+      left: 852px;
+      top: 0;
+    }
+    50% {
+      left: 852px;
+      top: 760px;
+    }
+    75% {
+      left: -102px;
+      top: 760px;
+    }
+    100% {
+      left: -102px;
+      top: 0;
+    }
+  }
+  }
+ // maiores que 800px
+
+  @media screen and (max-width: 1228px) {
+ .ilusao{
+  animation: animates1-resp 12.5s linear infinite;
+  z-index: -1;
+ }
+
+  @keyframes animates1-resp {
+    0% {
+      left:-2px;
+      top: -2px;
+    }
+    25% {
+      left: 732px;
+      top: 0px;
+    }
+    50% {
+      left: 732px;
+      top: 734px;
+    }
+    75% {
+      left: -2px;
+      top: 734px;
+    }
+    100% {
+      left: -2px;
+      top: -2px;
+    }
+  }
+  }
+  @media screen and (max-width: 1064px) {
+ .ilusao{
+  animation: animates1-resp 12.5s linear infinite;
+  z-index: -1;
+ }
+
+  @keyframes animates1-resp {
+    0% {
+      left:-112px;
+      top: -2px;
+    }
+    25% {
+      left: 532px;
+      top: 0px;
+    }
+    50% {
+      left: 532px;
+      top: 744px;
+    }
+    75% {
+      left: -112px;
+      top: 744px;
+    }
+    100% {
+      left: -112px;
+      top: -2px;
+    }
+  }
+  }
+  @media screen and (max-width: 922px) {
+ .ilusao{
+  animation: animates1-resp 12.5s linear infinite;
+  z-index: -1;
+ }
+
+  @keyframes animates1-resp {
+    0% {
+      left:0px;
+      top: -2px;
+    }
+    25% {
+      left: 432px;
+      top: 0px;
+    }
+    50% {
+      left: 432px;
+      top: 764px;
+    }
+    75% {
+      left: 0px;
+      top: 764px;
+    }
+    100% {
+      left: 0px;
+      top: -2px;
+    }
+  }
+  }
+  @media screen and (max-width: 760px) {
+ .ilusao{
+  animation: animates1-resp 12.5s linear infinite;
+  z-index: -1;
+ }
+
+  @keyframes animates1-resp {
+    0% {
+      left:-82px;
+      top: -122px;
+    }
+    25% {
+      left: 342px;
+      top: -122px;
+    }
+    50% {
+      left: 342px;
+      top: 1334px;
+    }
+    75% {
+      left: -82px;
+      top: 1334px;
+    }
+    100% {
+      left: -82px;
+      top: -122px;
+    }
+  }
+  }
+  @media screen and (max-width: 644px) {
+ .ilusao{
+  animation: animates1-resp 12.5s linear infinite;
+  z-index: -1;
+ }
+
+  @keyframes animates1-resp {
+    0% {
+      left:-42px;
+      top: -182px;
+    }
+    25% {
+      left: 272px;
+      top: -182px;
+    }
+    50% {
+      left: 272px;
+      top: 1334px;
+    }
+    75% {
+      left: -42px;
+      top: 1334px;
+    }
+    100% {
+      left: -42px;
+      top: -182px;
+    }
+  }
+  }
+  @media screen and (max-width: 584px) {
+ .ilusao{
+  animation: animates1-resp 12.5s linear infinite;
+  z-index: -1;
+ }
+  @keyframes animates1-resp {
+    0% {
+      left:4px;
+      top: -182px;
+    }
+    25% {
+      left: 262px;
+      top: -182px;
+    }
+    50% {
+      left: 262px;
+      top: 1334px;
+    }
+    75% {
+      left: 4px;
+      top: 1334px;
+    }
+    100% {
+      left: 4px;
+      top: -182px;
+    }
+  }
+  }
+  @media screen and (max-width: 540px) {
+ .ilusao{
+  animation: animates1-resp 12.5s linear infinite;
+  z-index: -1;
+ }
+  @keyframes animates1-resp {
+    0% {
+      left:-122px;
+      top: -42px;
+    }
+    25% {
+      left: 122px;
+      top: -42px;
+    }
+    50% {
+      left: 122px;
+      top: 1494px;
+    }
+    75% {
+      left: -122px;
+      top: 1494px;
+    }
+    100% {
+      left: -122px;
+      top: -42px;
+    }
+  }
+  }
+  @media screen and (max-width: 456px) {
+ .ilusao{
+  animation: animates1-resp 12.5s linear infinite;
+  z-index: -1;
+ }
+  @keyframes animates1-resp {
+    0% {
+      left:-12px;
+      top: -42px;
+    }
+    25% {
+      left: 222px;
+      top: -42px;
+    }
+    50% {
+      left: 222px;
+      top: 1294px;
+    }
+    75% {
+      left: -22px;
+      top: 1294px;
+    }
+    100% {
+      left: -12px;
+      top: -42px;
+    }
+  }
+  }
+  @media screen and (max-width: 384px) {
+ .ilusao{
+  animation: animates1-resp 12.5s linear infinite;
+  z-index: -1;
+ }
+  @keyframes animates1-resp {
+    0% {
+      left:-122px;
+      top: 22px;
+    }
+    25% {
+      left: 122px;
+      top: 22px;
+    }
+    50% {
+      left: 122px;
+      top: 1494px;
+    }
+    75% {
+      left: -122px;
+      top: 1494px;
+    }
+    100% {
+      left: -122px;
+      top:22px;
+    }
+  }
+  }
+
 
 .ilusao p{
-  
-   align-items: center;
+  overflow: hidden;
+  align-items: center;
   text-align: center;
   display: flex;
   justify-content: center;
   transform: rotate(8deg);
    box-sizing: border-box;
    
+   
 }
-@keyframes animates1 {
- 0%{
-  left: 0;
-  top: 0;
-  
- }
- 25%{
-  left: 1019px;
-  top: 0;
- }
- 50%{
-  left: 1019px;
-  top: 455px;
- }
- 75%{
-  left: 0px;
-  top: 455px;
- }
- 100%{
-  left: 0px;
-  top: 0px;
- }
-}
+
 
 @keyframes rodarCirculo {
   from {
@@ -232,7 +532,7 @@
     z-index: 1;
   }
   .ilusao{
-   display: none;
+  
     z-index: 0;
 }
 }
@@ -287,5 +587,5 @@
   }
 }
 .head-text{
-  z-index: 9;
+  z-index: 99;
 }

@@ -15,13 +15,7 @@ const App = () => {
       </div>
 
       <div className="app-home v1">
-        <div className="div-bolas">
-
-        <div className="quadrado"></div>
-        <div className="bolas">
-          <span style={spanStyle}></span>
-        </div>
-        </div>
+    
         <Home />
       
       </div>
