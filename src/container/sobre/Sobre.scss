@@ -114,13 +114,14 @@
  align-items: center;
  justify-content: center;
  flex-direction: column;
-
-  background-size: cover;
-  background-position: center;
-  background-repeat: repeat;
+ background-size: cover;
+ background-position: center;
+ background-repeat: repeat;
+ 
 }
 .psobre{
-background-color: var(--cor-frente);
+  background-color: var(--cor-frente);
+  border-radius: 12px;
 
   position: relative;
 }
@@ -172,7 +173,7 @@ background-color: var(--cor-frente);
   margin-left: 13px;
   animation: animates1 42.5s linear infinite;
   box-sizing: border-box;
-  margin-top: -340px;
+  margin-top: -349px;
   gap: 12px;
   @media screen and (width: 1000px) {
    
@@ -205,11 +206,11 @@ background-color: var(--cor-frente);
  }
  50%{
   left: 1019px;
-  top: 435px;
+  top: 455px;
  }
  75%{
   left: 0px;
-  top: 435px;
+  top: 455px;
  }
  100%{
   left: 0px;

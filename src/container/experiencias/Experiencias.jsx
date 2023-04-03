@@ -11,8 +11,8 @@ import AppWrap from '../../wrapper/AppWrap';
 
 const experiencia = [
   {
-    title: "Rick-And-Mortin",
-    description: "Html, Css, e JavaScript",
+    title: "Rick-And-Morty",
+    description: "Api de busca de personagens",
     tecnologias: "Html, Css, e JavaScript",
     projectLink: "https://github.com/RobervanSouza",
     imgUrl: images.rick,
@@ -21,11 +21,12 @@ const experiencia = [
   },
   {
     title: "Vigilantes do sono",
-    description: "Html, Css, e JavaScript",
-    tecnologias: "Html, Css, e JavaScript",
+    description: "Projeto do Bootcamp, que mostra gaficos vigilantes do sono",
+    tecnologias: "Ract, TypeScript, Axios, ApexCharts, StyleComponents ",
     projectLink: "https://github.com/RobervanSouza",
     imgUrl: images.vigilantes,
-    codeLink: "https://github.com/RobervanSouza/api-rick-and-mortin-javascript",
+    codeLink:
+      "https://github.com/equipe4-btc-vigilantesdosono/vigisono-client/tree/home",
     tags: ["Front-End", "Todos"],
   },
   {
@@ -84,7 +85,7 @@ function Experiencias() {
       <div className="experiencia">
         <div className="containerEx">
           <h2 className="head-text">
-            Meus <span>Projetos</span>
+            Meus Projetos
           </h2>
 
           <div className="app__work-filter">
@@ -146,6 +147,9 @@ function Experiencias() {
                   </h4>
                   <h4 className="p-text" style={{ marginTop: 5 }}>
                     Tecnologias: <span> {work.tecnologias} </span>
+                  </h4>
+                  <h4 className="p-text" style={{ marginTop: 5 }}>
+                    Descrição: <span> {work.description} </span>
                   </h4>
 
                   <div className="app__work-tag app__flex">
