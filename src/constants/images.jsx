@@ -1,4 +1,16 @@
 /* eslint-disable import/no-anonymous-default-export */
+import grendene from '../assets/grendene.png';
+import grendeneimg from '../assets/grendeneimagem.jpeg';
+import novakoasin from '../assets/nova-koasin.png';
+import novakoasinimg from '../assets/novakoasinimagem.png';
+import petrobras from '../assets/petrobras.jpg';
+import petrobrasimg from '../assets/imagem-petrobras.jpg';
+import dresserange from '../assets/dresser-rand.jpg';
+import dresserangeimg from '../assets/imgdresser.jpg';
+import trexcon from '../assets/trexcon.jpg';
+import trexconimg from '../assets/trexcomimg.png';
+import perlanegraconvites from '../assets/perolanegra.jpg';
+import perlanegraconvitesimg from '../assets/perolanegraimg.jpg';
 import vigilantes from "../assets/vigilante-do-sono.png"
 import email from '../assets/email.png';
 import mobile from '../assets/mobile.png';
@@ -42,6 +54,18 @@ import cybersecurity from '../assets/ciberseguranca.jpg';
 import cursos from '../assets/programacao-linguagem.jpg';
 import logo1  from '../assets/logonome.png';
 export default {
+  perlanegraconvites,
+  perlanegraconvitesimg,
+  grendene,
+  grendeneimg,
+  trexcon,
+  trexconimg,
+  novakoasin,
+  novakoasinimg,
+  petrobras,
+  petrobrasimg,
+  dresserange,
+  dresserangeimg,
   vigilantes,
   rick,
   logo1,

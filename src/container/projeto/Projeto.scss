@@ -2,14 +2,17 @@
   flex: 1;
   width: 100%;
   flex-direction: column;
+ 
 }
 
 .app__skills-container {
-  width: 80%;
+  width: 100%;
   margin-top: 3rem;
-  
+  align-items: center;
+  justify-content: center;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+
   
   @media screen and (max-width: 900px) {
     width: 100%;
@@ -19,38 +22,36 @@
 
 .app__skills-list {
   flex: 1;
-  
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-start;
-  align-items: flex-start;
-
+  justify-content: space-around;
+  align-items: center;
   margin-right: 5rem;
-
+ //
+padding: 20px 20px;
   @media screen and (max-width: 900px) {
     margin-right: 0;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
   }
 }
 
 .app__skills-item {
   flex-direction: column;
   text-align: center;
-
+  display: flex;
+  justify-content: center;
   margin: 1rem;
-
   transition: all 0.3s ease-in-out;
 
   div {
-    width: 90px;
-    height: 90px;
-    border-radius: 50%;
-    background-color: #fef4f5;
-
+    width: 210px;
+    height: 110px;
+    background-color: rgb(243, 215, 215);
     img {
-      width: 50%;
-      height: 50%;
+      width: 80%;
+      height: 80%;
     }
 
     &:hover {
@@ -103,56 +104,121 @@
   margin: 1rem 0;
 }
 
-.app__skills-exp-works {
-  flex: 1;
+.card{
 
-  .app__skills-exp-work {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: flex-start;
-    margin-bottom: 1rem;
-    cursor: pointer;
+ margin: 20px;
+ position: relative;
+ transform-style: preserve-3d;
+ perspective: 1000px;
+}
+.card-front, 
+.card-back {
+  width: 230px;
+  height: 230px;
+ 
+  background-color: rgb(109, 100, 100);
+  background-image: url("../../assets/fundoteste3.jpg");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+   transition: transform 3s ease;
 
-    h4 {
-      font-weight: 500;
-    }
-
-    p {
-      font-weight: 400;
-      color: var(--gray-color);
-      margin-top: 5px;
-    }
-  }
+}
+.card-front{
+  transform: rotateY(0deg);
+   transition: transform 3s ease;
 }
 
-.app__skills-exp-year {
-  margin-right: 3rem;
-
-  p {
-    font-weight: 800;
-    color: var(--secondary-color);
-  }
-
-  @media screen and (max-width: 450px) {
-    margin-right: 1rem;
-  }
+.card-back{
+  
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: rotateY(180deg);
+    transition: transform 3s ease;
+}
+.card-back::after,
+.card-front::after{
+  content: '';
+  width: 100%;
+  height: 100%;
+  //background-color: rgb(116, 109, 109);
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.6;
 }
 
-.skills-tooltip {
-  max-width: 300px !important;
-  background-color: var(--white-color) !important;
-  box-shadow: 0 0 25px rgba(0, 0, 0, 0.1) !important;
-  border-radius: 5px !important;
-  padding: 1rem !important;
-  color: var(--gray-color) !important;
-  text-align: center !important;
-  line-height: 1.5 !important;
-  opacity: 1 !important;
+.card-front .inner{
+  width: 100%;
+  height: min-content;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateZ(60px) scale(0.94);
+   transition: transform 3s ease;
+  z-index: 2;
+  
+}
+.card-back .inner{
+  width: 100%;
+  height: 230px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%) translateZ(60px) scale(0.94);
+   transition: transform 3s ease;
+  z-index: 2;
+  
+}
+.card-back .inner .ano{
+ 
+  color:rgb(6, 6, 6);
+  font-family:'Times New Roman', Times, serif
+}
 
-  @media screen and (min-width: 2000px) {
-    font-size: 1.75rem !important;
-    max-width: 500px !important;
-    line-height: 2 !important;
-  }
+.colorfunção{
+  color: rgb(0,0,255);
+}
+
+
+.inner .card-imagem{
+  width: 90px;
+  margin-bottom: 20px;
+}
+
+
+.inner h3{
+  margin-bottom: 8px;
+  color: rgb(13, 11, 11);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 40px;
+  text-transform: capitalize;
+}
+.inner h6{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  color: black;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 18px;
+}
+.card-back .inner{
+  margin-top: 23px;
+}
+
+
+.card:hover .card-front{
+  transform: rotateY(-180deg);
+   transition: transform 3s ease;
+}
+
+.card:hover .card-back{
+  transform: rotateY(0deg);
+   transition: transform 3s ease;
 }
