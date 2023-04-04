@@ -84,9 +84,7 @@ function Experiencias() {
     <>
       <div className="experiencia">
         <div className="containerEx">
-          <h2 className="head-text">
-            Meus Projetos
-          </h2>
+          <h2 className="head-text">Meus Projetos</h2>
 
           <div className="app__work-filter">
             {["Front-End", "Back-End", "Full-Stack", "Mobile App", "Todos"].map(
@@ -145,13 +143,19 @@ function Experiencias() {
                   <h4 className="bold-text">
                     Titulo: <span>{work.title}</span>
                   </h4>
-                  <h4 className="p-text" style={{ marginTop: 5 }}>
-                    Tecnologias: <span> {work.tecnologias} </span>
-                  </h4>
-                  <h4 className="p-text" style={{ marginTop: 5 }}>
-                    Descrição: <span> {work.description} </span>
-                  </h4>
 
+                  <div className="botaoMais">
+                    <button> Mais Informações</button>
+                  </div>
+
+                  <div className="ocultar-texto">
+                    <h4 className="p-text" style={{ marginTop: 5 }}>
+                      Tecnologias: <span> {work.tecnologias} </span>
+                    </h4>
+                    <h4 className="p-text" style={{ marginTop: 5 }}>
+                      Descrição: <span> {work.description} </span>
+                    </h4>
+                  </div>
                   <div className="app__work-tag app__flex">
                     <h5 className="p-text">{work.tags[0]}</h5>
                   </div>

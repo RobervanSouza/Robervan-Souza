@@ -36,7 +36,7 @@
    border-radius: 15px;
     
     p{
-      display: none;
+      
       font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif ;
       font-weight: 900;
       margin-bottom: 3px;
@@ -71,15 +71,22 @@
 .texto{
   align-items: center;
   justify-content: center;
-
   display: flex;
   flex-direction: column;
-
+  margin-bottom: 3px;
 }
 
 .app__profile-item:hover{
   margin-top: 4rem;
   border: 2px solid black;
+  .botaoDescricao{
+    display: none;
+  }
+  .ocultarDescricao{
+  display: block;
+  
+}
+  
 }
 .app__profile-item:hover img{
    border: 4px solid rgba(192,192,192, 1.18);
@@ -89,10 +96,6 @@
 .app__profile-item:hover h2{
   top: 45px ;
   margin-left: 5px;
-}
-
-.app__profile-item:hover .texto button{
-  display: none;
 }
 
 .app__profile-item:hover .texto p{
@@ -588,4 +591,22 @@
 }
 .head-text{
   z-index: 99;
+}
+.ocultarDescricao{
+  display: none;
+  margin-left: 9px;
+}
+
+.botaoDescricao button{
+  width: 124px;
+  height: 24px;
+  border-radius: 12px;
+  background-image: linear-gradient(90deg, red 2%, green 28%, yellow 40%, blue 55%, white 75%, rgb(91, 47, 47) 100%);
+  animation: animar 37s linear infinite;
+}
+
+@keyframes animar {
+  100%{
+    background-position: 20rem;
+  }
 }

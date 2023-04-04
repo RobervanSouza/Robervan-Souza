@@ -150,8 +150,8 @@
     margin: 2rem;
     padding: 2px;
     border-radius: 0.5rem;
-    background-color: #ffffffd1;
-    color: #000;
+    background-color: #443434d1;
+    color: #c7baba;
      border: 2px solid rgb(6, 242, 6);
     cursor: pointer;
     transition: all 0.3s ease;
@@ -234,10 +234,10 @@ border-radius: 0.5rem;
 
 .app__work-content {
   padding: 0.5rem;
-  width: 100%;
+  width: 90%;
   position: relative;
   flex-direction: column;
-  
+
 
   h4 {
     margin-top: 1rem;
@@ -259,11 +259,66 @@ border-radius: 0.5rem;
 
 }
 .app__work-content h4{
-  color: black;
+  color: rgb(7, 7, 7);
   font-size: 1.2rem;
   
 }
 .app__work-content span{
-  color: var(--cor-frente);
+  color:white;
   
+}
+
+.ocultar-texto{
+  display: none;
+  
+  align-items: center;
+  justify-content: center;
+ 
+}
+
+.app__work-content:hover button{
+  display: none;
+ 
+}
+
+.app__work-content:hover{
+  .ocultar-texto{
+    display: block;
+  }
+}
+
+.ocultar-texto{
+  width: 253px;
+  
+  padding: 4px 4px;
+  border-radius: 12px;
+  background-image: linear-gradient(90deg, rgb(240, 176, 176) 2%, rgb(139, 241, 139) 28%, rgb(250, 250, 117) 40%, rgb(129, 129, 247) 55%, rgb(160, 155, 155) 75%, rgb(141, 125, 125) 100%);
+  animation: anima 19s linear infinite;
+}
+ @keyframes anima {
+ 0% {
+    
+    filter: hue-rotate(0deg);
+  }
+  100% {
+    
+    filter: hue-rotate(360deg);
+     background-position: 20rem;
+  }
+}
+
+.botaoMais button{
+  width: 124px;
+  color: #fff;
+  height: 29px;
+  background-color: var(--cor-frente);
+  border-radius: 12px;
+ 
+ border: 2px solid rgb(5, 5, 5);
+      box-shadow: 0 0 9px rgba(234, 220, 220, 5.2);
+  animation: anima 9s linear infinite;
+}
+
+.ocultar-texto h4{
+   color: red;
 }
