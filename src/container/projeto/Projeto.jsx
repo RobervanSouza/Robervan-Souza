@@ -28,7 +28,7 @@ const skills = [
     descricao: "Suporte técnico com o CLP Bentle-Nevada da GE. Durante o periodo de 6 meses trabalhando tercerizado, otimizando o fluxo de petróleo",
   },
   {
-    name: "Dresser-Rander",
+    name: "Dresser-Rand",
     imgUrlFront: images.dresserange,
     função: "Montagem de painel para plataforma da petrobras",
     year: [2013, " a ", 2014],
@@ -64,11 +64,12 @@ const Projeto = () => {
         </div>
 
         <div className="app__skills-container">
+         
           <motion.div className="app__skills-list">
             {skills.map((skill) => (
               <>
                 <div className="card">
-                  <span></span>
+                 
                   <div className="card-front">
                     <div className="inner">
                       <img
