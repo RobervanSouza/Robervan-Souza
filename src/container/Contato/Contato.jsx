@@ -1,30 +1,72 @@
 import React from "react";
-
-import { images } from "../../constants";
+import {
+  FaGithubSquare,
+  FaWhatsapp,
+  FaYoutube,
+  FaLinkedin,
+} from "react-icons/fa";
 import { AppWrap, MotionWrap } from "../../wrapper";
-
+import { FcBusinessContact, FcAddressBook, FcManager } from "react-icons/fc";
 import "./contato.scss";
 
-const Contato = () => {
+function Contato () {
   return (
-    <>
-      <h2 className="head-text"> Contato</h2>
-
-      <div className="card-conato">
-        <div className="card-email ">
-          <img src={images.email} alt="email" />
-          <a href="rob.robervan@hotmail.com" className="email">
-            rob.robervan@hotmail.com
-          </a>
+      
+        <div className="container">
+          <div className="ola">
+           
+          </div>
+          <div className="card-contato">
+            <ul>
+              <li>
+                <i className="icone-contato">
+                  <FcBusinessContact />
+                  <span> (89) 99453-2058</span>
+                </i>
+              </li>
+              <li>
+                <i className="icone-contato">
+                  <FcAddressBook />
+                  <span className="email"> rob.robervan@hotmail.com</span>
+                </i>
+              </li>
+            </ul>
+          </div>
+          <div className="card-nome">
+            <div className="card-nome-icon">
+              {" "}
+              <FcManager />{" "}
+            </div>
+            <h3> Robervan Souza</h3>
+          </div>
+          <div className="card-link">
+            <ul>
+              <li>
+                <i>
+                  <FaGithubSquare />
+                </i>
+              </li>
+              <li>
+                <i>
+                  <FaWhatsapp />
+                </i>
+              </li>
+              <li>
+                <i>
+                  <FaYoutube />
+                </i>
+              </li>
+              <li>
+                <i>
+                  <FaLinkedin />
+                </i>
+              </li>
+            </ul>
+          </div>
         </div>
-        <div className="card-telefone">
-          <img src={images.mobile} alt="phone" />
-          <a href="tel:+1 (123) 456-7890" className="telefone">
-            (85) 99257-3085
-          </a>
-        </div>
-      </div>
-    </>
+      
+      
+   
   );
 };
 

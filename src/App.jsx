@@ -27,8 +27,10 @@ const App = () => {
       </div>
 
       <div className="app-projeto">
+    
         <Projeto />
       </div>
+
       <div className="app-contato">
         <Contato />
       </div>

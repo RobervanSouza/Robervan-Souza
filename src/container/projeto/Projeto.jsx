@@ -56,7 +56,7 @@ const skills = [
 const Projeto = () => {
   return (
     <>
-      <section>
+      <section className="projeto">
         <div>
           <h2 className="head-text">
             Experiências <span>Durante </span> 13 anos de trabalho
