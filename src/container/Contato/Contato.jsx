@@ -11,6 +11,7 @@ import { FcBusinessContact, FcAddressBook } from "react-icons/fc";
 import "./contato.scss";
 
 function Contato() {
+   
   return (
     <>
       <div className="cards">
@@ -50,34 +51,44 @@ function Contato() {
                 </div>
               </li>
               <li>
-                <a
-                  href="https://api.whatsapp.com/send?phone=5585994532058"
-                  target="_blank"
-                  rel="noreferrer">
-                  <FaWhatsapp className="contato-whatsap" />
-                </a>
-                <span>WhatSapp</span>
+                <div className="contato-whatsap">
+                  <div className="icone-whatsap">
+                    <a
+                      href="https://api.whatsapp.com/send?phone=5585994532058"
+                      target="_blank"
+                      rel="noreferrer">
+                      <FaWhatsapp />
+                    </a>
+                  </div>
+                </div>
               </li>
               <li>
-                <a
-                  href="https://github.com/RobervanSouza"
-                  target="_blank"
-                  rel="noreferrer">
-                  <FaGithub className="contato-github" />
-                </a>
+                <div className="contato-github">
+                  <a
+                    href="https://github.com/RobervanSouza"
+                    target="_blank"
+                    rel="noreferrer"
+                    className="icone-github">
+                    <FaGithub />
+                  </a>
+                </div>
               </li>
               <li>
-                <a
-                  href="https://www.youtube.com/@robervansouza4546/videos"
-                  target="_blank"
-                  rel="noreferrer">
-                  <FaYoutube className="contato-youtube" />
-                </a>
+                <div class="contato-youtube">
+                  
+                  <a
+                    href="https://www.youtube.com/@robervansouza4546/videos"
+                    target="_blank"
+                    rel="noreferrer"
+                    class="youtube-icone">
+                    <FaYoutube />
+                  </a>
+                </div>
               </li>
             </ul>
           </div>
         </div>
-        <div className="compartilhar-icones">        
+        <div className="compartilhar-icones">
           <div className="compartilhar-links">
             <ul>
               <li>
@@ -104,7 +115,6 @@ function Contato() {
           </div>
         </div>
       </div>
-     
     </>
   );
 }
