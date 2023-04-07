@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {
   FaGithubSquare,
   FaWhatsapp,
@@ -9,9 +9,25 @@ import {
 import { AppWrap } from "../../wrapper";
 import { FcBusinessContact, FcAddressBook } from "react-icons/fc";
 import "./contato.scss";
+import { BiGitMerge } from "react-icons/bi";
+
+
 
 function Contato() {
-   
+  useEffect(() => {
+    let  links = document.querySelector(".compartilhar-links");
+    let icone = document.querySelector(".compartilhar-icones");
+     links.onclick = function () {
+       if (icone.classList.contains("active")) {
+         icone.classList.remove("active");
+         console.log("desativado")
+       } else {
+         icone.classList.add("active");
+         console.log("ativo");
+
+       }
+     };
+  }, []);
   return (
     <>
       <div className="cards">
@@ -54,7 +70,7 @@ function Contato() {
                 <div className="contato-whatsap">
                   <div className="icone-whatsap">
                     <a
-                      href="https://api.whatsapp.com/send?phone=5585994532058"
+                      href="https://api.whatsapp.com/send?phone=5589994532058"
                       target="_blank"
                       rel="noreferrer">
                       <FaWhatsapp />
@@ -75,7 +91,6 @@ function Contato() {
               </li>
               <li>
                 <div class="contato-youtube">
-                  
                   <a
                     href="https://www.youtube.com/@robervansouza4546/videos"
                     target="_blank"
@@ -90,29 +105,74 @@ function Contato() {
         </div>
         <div className="compartilhar-icones">
           <div className="compartilhar-links">
-            <ul>
-              <li>
-                <i>
-                  <FaGithubSquare />
-                </i>
-              </li>
-              <li>
-                <i>
-                  <FaWhatsapp />
-                </i>
-              </li>
-              <li>
-                <i>
-                  <FaYoutube />
-                </i>
-              </li>
-              <li>
-                <i>
-                  <FaLinkedin />
-                </i>
-              </li>
-            </ul>
+            <span className="icone-compartilhar">
+              <BiGitMerge />
+            </span>
           </div>
+          <li style={{ "--i": 1 }}>
+            <a
+              href="https://www.linkedin.com/in/robervan-souza/"
+              target="_blank"
+              rel="noreferrer">
+              <FaLinkedin />
+            </a>
+          </li>
+          <li style={{ "--i": 2 }}>
+            <a
+              href="https://www.linkedin.com/in/robervan-souza/"
+              target="_blank"
+              rel="noreferrer">
+              <FaLinkedin />
+            </a>
+          </li>
+          <li style={{ "--i": 3 }}>
+            <a
+              href="https://www.linkedin.com/in/robervan-souza/"
+              target="_blank"
+              rel="noreferrer">
+              <FaLinkedin />
+            </a>
+          </li>
+          <li style={{ "--i": 4 }}>
+            <a
+              href="https://www.linkedin.com/in/robervan-souza/"
+              target="_blank"
+              rel="noreferrer">
+              <FaLinkedin />
+            </a>
+          </li>
+          <li style={{ "--i": 5 }}>
+            <a
+              href="https://www.linkedin.com/in/robervan-souza/"
+              target="_blank"
+              rel="noreferrer">
+              <FaLinkedin />
+            </a>
+          </li>
+          <li style={{ "--i": 6 }}>
+            <a
+              href="https://www.linkedin.com/in/robervan-souza/"
+              target="_blank"
+              rel="noreferrer">
+              <FaLinkedin />
+            </a>
+          </li>
+          <li style={{ "--i": 7}}>
+            <a
+              href="https://www.linkedin.com/in/robervan-souza/"
+              target="_blank"
+              rel="noreferrer">
+              <FaLinkedin />
+            </a>
+          </li>
+          <li style={{ "--i": 8 }}>
+            <a
+              href="https://www.linkedin.com/in/robervan-souza/"
+              target="_blank"
+              rel="noreferrer">
+              <FaLinkedin />
+            </a>
+          </li>
         </div>
       </div>
     </>
