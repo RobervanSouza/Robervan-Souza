@@ -3,13 +3,14 @@ import {
   FaGithubSquare,
   FaWhatsapp,
   FaYoutube,
+  FaGithub,
   FaLinkedin,
 } from "react-icons/fa";
-import { AppWrap} from "../../wrapper";
-import { FcBusinessContact, FcAddressBook,  } from "react-icons/fc";
+import { AppWrap } from "../../wrapper";
+import { FcBusinessContact, FcAddressBook } from "react-icons/fc";
 import "./contato.scss";
 
-function Contato () {
+function Contato() {
   return (
     <>
       <div className="cards">
@@ -24,43 +25,53 @@ function Contato () {
               </li>
               <li>
                 <i className="icone-contato">
-                  <FcAddressBook />
-                  <span className="email"> rob.robervan@hotmail.com</span>
+                  <span className="email">
+                    <FcAddressBook />
+                    rob.robervan@hotmail.com
+                  </span>
                 </i>
               </li>
             </ul>
           </div>
           <div className="card-nome">
-            <div className="card-nome-icon">
-       
-            </div>
+            <div className="card-nome-icon"></div>
             <h3> Robervan Souza</h3>
           </div>
           <div className="card-link">
             <ul>
               <li>
+                <div className="contato-linkedin">
+                  <a
+                    href="https://www.linkedin.com/in/robervan-souza/"
+                    target="_blank"
+                    rel="noreferrer">
+                    <FaLinkedin />
+                  </a>
+                </div>
+              </li>
+              <li>
                 <a
-                className="linkedin-contato"
-                  href="https://www.linkedin.com/in/robervan-souza/"
+                  href="https://api.whatsapp.com/send?phone=5585994532058"
                   target="_blank"
                   rel="noreferrer">
-                  <FaLinkedin />
+                  <FaWhatsapp className="contato-whatsap" />
                 </a>
               </li>
               <li>
-                <i>
-                  <FaWhatsapp />
-                </i>
+                <a
+                  href="https://github.com/RobervanSouza"
+                  target="_blank"
+                  rel="noreferrer">
+                  <FaGithub className="contato-github" />
+                </a>
               </li>
               <li>
-                <i>
-                  <FaYoutube />
-                </i>
-              </li>
-              <li>
-                <i>
-                  <FaLinkedin />
-                </i>
+                <a
+                  href="https://www.youtube.com/@robervansouza4546/videos"
+                  target="_blank"
+                  rel="noreferrer">
+                  <FaYoutube className="contato-youtube" />
+                </a>
               </li>
             </ul>
           </div>
@@ -76,16 +87,16 @@ function Contato () {
               </li>
               <li>
                 <i className="icone-contato">
-                  <FcAddressBook />
-                  <span className="email"> rob.robervan@hotmail.com</span>
+                  <span className="FcAddressBook">
+                    <FcAddressBook />
+                  </span>
+                  <span className="email"> rob.robervan@ hotmail.com</span>
                 </i>
               </li>
             </ul>
           </div>
           <div className="card-nome">
-            <div className="card-nome-icon">
-             
-            </div>
+            <div className="card-nome-icon"></div>
             <h3> Robervan Souza</h3>
           </div>
           <div className="card-link">
@@ -116,8 +127,7 @@ function Contato () {
       </div>
     </>
   );
-};
-
+}
 
 export default AppWrap(Contato, "contato");
 
