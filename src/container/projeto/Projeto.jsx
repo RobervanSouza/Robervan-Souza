@@ -116,8 +116,4 @@ const Projeto = () => {
   );
 };
 
-export default AppWrap(
-  MotionWrap(Projeto, "app__projetos"),
-  "projetos",
-  "app__whitebg"
-);
+export default AppWrap(Projeto, "projetos");
