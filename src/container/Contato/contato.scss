@@ -1,5 +1,6 @@
 
 .cards{
+
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -10,7 +11,6 @@
     justify-content: center;
     background-color: var(--cor-fundo);
 }
-
 .container{
     position: relative;
     background-color: rgb(249, 205, 205);
@@ -26,8 +26,7 @@
    
     position: relative;
     display: flex;
-    width: 0%;
-    height: 0%;
+  
     opacity: 0;
     
     align-items: center;
@@ -184,6 +183,59 @@
     transform: translateY(0%);
 }
 
+//1 animação para ficar escrevendo o email
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes remove-bar {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+.container:hover .icone-contato .email {
+  overflow: hidden;
+  display: flex;
+  position: relative;
+   animation: typing 6s forwards;
+  white-space: nowrap;
+  box-sizing: border-box;
+  background-color: #b7ced7;
+}
+
+.container:hover .icone-contato .email::after {
+  content: '|';
+  position: absolute;
+  right: 0;
+  width: 1px;
+  height: 100%;
+ 
+
+}
+
+@keyframes blink {
+  from, to {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0;
+  }
+}
+.container:hover  .icone-contato .email:hover::after {
+  animation: none;
+}
+
+// 5 estilização linkedin
 .contato-linkedin{
      cursor: pointer;
   display: flex;
@@ -270,6 +322,7 @@
 }
 
 
+// 5 estilização whatsap
 .contato-whatsap{
     width: 50px;
     height: 50px;
@@ -286,84 +339,4 @@
     width: 50px;
     height: 50px;
     color: red;
-}
-
-
-
-//  .icone-contato {
-//   display: inline-block;
-//   position: relative;
-  
-
-// }
-
-// .icone-contato .email {
-//   animation: fundo 4s infinite;
-//   background-color: rgb(176, 230, 69);
-//   color: black;
-//   border-radius: 4px;
-// }
-
-
-
-
-// @keyframes fundo {
-//   0% {
-//     opacity: 1;
-//   }
-//   50% {
-//     opacity: 0.5;
-//   }
-//   100% {
-//     opacity: 1;
-//   }
-// }
-@keyframes typing {
-  from {
-    width: 0;
-  }
-  to {
-    width: 100%;
-  }
-}
-
-@keyframes remove-bar {
-  from {
-    opacity: 1;
-  }
-  to {
-    opacity: 0;
-  }
-}
-
-.container:hover .icone-contato .email {
-  overflow: hidden;
-  display: flex;
-  position: relative;
-   animation: typing 6s forwards;
-  white-space: nowrap;
-  box-sizing: border-box;
-  background-color: #b7ced7;
-}
-
-.container:hover .icone-contato .email::after {
-  content: '|';
-  position: absolute;
-  right: 0;
-  width: 1px;
-  height: 100%;
- 
-
-}
-
-@keyframes blink {
-  from, to {
-    opacity: 1;
-  }
-  50% {
-    opacity: 0;
-  }
-}
-.container:hover  .icone-contato .email:hover::after {
-  animation: none;
 }

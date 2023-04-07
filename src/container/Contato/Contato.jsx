@@ -56,6 +56,7 @@ function Contato() {
                   rel="noreferrer">
                   <FaWhatsapp className="contato-whatsap" />
                 </a>
+                <span>WhatSapp</span>
               </li>
               <li>
                 <a
@@ -76,30 +77,8 @@ function Contato() {
             </ul>
           </div>
         </div>
-        <div className="container">
-          <div className="card-contato">
-            <ul>
-              <li>
-                <i className="icone-contato">
-                  <FcBusinessContact />
-                  <span> (89) 99453-2058</span>
-                </i>
-              </li>
-              <li>
-                <i className="icone-contato">
-                  <span className="FcAddressBook">
-                    <FcAddressBook />
-                  </span>
-                  <span className="email"> rob.robervan@ hotmail.com</span>
-                </i>
-              </li>
-            </ul>
-          </div>
-          <div className="card-nome">
-            <div className="card-nome-icon"></div>
-            <h3> Robervan Souza</h3>
-          </div>
-          <div className="card-link">
+        <div className="compartilhar-icones">        
+          <div className="compartilhar-links">
             <ul>
               <li>
                 <i>
@@ -125,6 +104,7 @@ function Contato() {
           </div>
         </div>
       </div>
+     
     </>
   );
 }
