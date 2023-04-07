@@ -5,9 +5,7 @@ import "./App.scss";
 import Home from "./container/home/Home";
 
 const App = () => {
-  const spanStyle = {
-    "--i": "1",
-  };
+  
   return (
     <div className="app">
       <div className="app-navbar">
