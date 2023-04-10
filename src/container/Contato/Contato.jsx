@@ -1,33 +1,38 @@
-import React, {useEffect} from "react";
+import React, { useEffect } from "react";
 import {
-  FaGithubSquare,
   FaWhatsapp,
   FaYoutube,
   FaGithub,
   FaLinkedin,
+  FaFacebook,
 } from "react-icons/fa";
 import { AppWrap } from "../../wrapper";
 import { FcBusinessContact, FcAddressBook } from "react-icons/fc";
 import "./contato.scss";
 import { BiGitMerge } from "react-icons/bi";
 
-
-
 function Contato() {
   useEffect(() => {
-    let  links = document.querySelector(".compartilhar-links");
-    let icone = document.querySelector(".compartilhar-icones");
-     links.onclick = function () {
-       if (icone.classList.contains("active")) {
-         icone.classList.remove("active");
-         console.log("desativado")
-       } else {
-         icone.classList.add("active");
-         console.log("ativo");
+    function ShareVideo() {
+      var videoUrl = "https://www.youtube.com/watch?v=VIDEO_ID";
+      var shareUrl =
+        "https://www.youtube.com/share?url=" + encodeURIComponent(videoUrl);
+      window.open(shareUrl, "_blank");
+    }
 
-       }
-     };
+    let links = document.querySelector(".compartilhar-links");
+    let icone = document.querySelector(".compartilhar-icones");
+    links.onclick = function () {
+      if (icone.classList.contains("active")) {
+        icone.classList.remove("active");
+        console.log("desativado");
+      } else {
+        icone.classList.add("active");
+        console.log("ativo");
+      }
+    };
   }, []);
+
   return (
     <>
       <div className="cards">
@@ -109,28 +114,32 @@ function Contato() {
               <BiGitMerge />
             </span>
           </div>
+
           <li style={{ "--i": 1 }}>
             <a
               href="https://www.linkedin.com/in/robervan-souza/"
               target="_blank"
+              style={{ color: "blue" }}
               rel="noreferrer">
               <FaLinkedin />
             </a>
           </li>
           <li style={{ "--i": 2 }}>
             <a
-              href="https://www.linkedin.com/in/robervan-souza/"
+              href="https://www.facebook.com/sua_pagina"
               target="_blank"
-              rel="noreferrer">
-              <FaLinkedin />
+              rel="noreferrer"
+              style={{ color: "#3b5998" }}>
+              <FaFacebook />
             </a>
           </li>
           <li style={{ "--i": 3 }}>
             <a
               href="https://www.linkedin.com/in/robervan-souza/"
               target="_blank"
-              rel="noreferrer">
-              <FaLinkedin />
+              rel="noreferrer"
+              style={{ color: "red" }} onClick="ShareVideo">
+              <FaYoutube />
             </a>
           </li>
           <li style={{ "--i": 4 }}>
@@ -157,7 +166,7 @@ function Contato() {
               <FaLinkedin />
             </a>
           </li>
-          <li style={{ "--i": 7}}>
+          <li style={{ "--i": 7 }}>
             <a
               href="https://www.linkedin.com/in/robervan-souza/"
               target="_blank"

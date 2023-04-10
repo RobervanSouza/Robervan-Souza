@@ -1,6 +1,6 @@
 
 .cards{
-
+   
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
@@ -12,7 +12,9 @@
     align-items: center;
     justify-content: center;
     background-color: var(--cor-fundo);
+    
 }
+
 .container{
     position: relative;
     background-color: rgb(249, 205, 205);
@@ -93,8 +95,12 @@
     gap: 30px;
     top: 3px;
     transition: all 0.6s ease-in;
+    
 
+   
 }
+
+
 .card-nome-icon{
     position: relative;
     
@@ -131,13 +137,25 @@
     .card-nome h3{
         margin-left: 23px;
     }
+    .container {
+  margin-top: 3rem;
+}}
+@media screen and (max-width:408px) {
+    .card-nome h3{
+        margin-left: 23px;
+    }
+    .container {
+  margin-top: 9rem;
+
+}
 }
 .card-nome h3::first-letter {
     color: #84e566;
     font-family: 'Times New Roman', Times, serif;
     font-size: 30px;
     font-weight: 400;
-}
+   
+  }
 .card-link{
     position: absolute;
     background: linear-gradient(90deg, #6D7AFF, #6cd5ff);
@@ -164,18 +182,23 @@
     transition: all 500ms cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
+
 .container:hover .card-contato{
     width: 100%;
     height: 100%;
     opacity: 1;
     flex-wrap: wrap;
-    margin-left: -43px;
+    margin-left: -33px;
+
+   
 
 }
 .container:hover .card-nome {
+   
     transform: translateY(-38%);
     border-radius: 20px;
     height: 55%;
+    z-index: 99;
 }
 .container:hover .card-link{
     transform: translateY(0%);
@@ -456,7 +479,7 @@ border-radius: 50%;
 .compartilhar-icones{
   position: relative;
     background-color: rgb(105, 95, 95);
-    width: 350px;
+    width: 450px;
     height:350px;
     border-radius: 20px;
     align-items: center;
@@ -526,7 +549,24 @@ border-radius: 50%;
     margin-left: 0px;
    }
    .cards{
-    margin-left: 9px;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    margin-left: -24px;
+   }
+}
+@media screen and (max-width:512px) {
+  
+   .cards{
+    box-sizing: border-box;
+    margin-left: -44px;
+   }
+}
+@media screen and (max-width:512px) {
+  
+   .cards{
+    box-sizing: border-box;
+    margin-left: -4px;
+    
    }
 }
 
@@ -538,20 +578,84 @@ border-radius: 50%;
 
 .compartilhar-icones.active li {
   scale: 1;
+  margin-left: 54px;
+  display: flex;
    
 }
 .compartilhar-icones li a {
   position: relative;
   display: flex;
   transform: rotate(calc(360deg/-8 * var(--i)));
-  font-size: 1.5rem;
-  height: 40px;
-  width: 40px;
-  background-color: #84e566;
-  margin-left: 13px;
+  font-size: 2.5rem;
+  height: 60px;
+  width: 60px;
+  background-color: white;
+  border:  2px solid black;
+  margin-left: -23px;
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   gap: 13px;
+}
+@media screen and (max-width:512px) {
+   .compartilhar-icones.active li  {
+    margin-left: -12px;
+  
+   }
+   
+   .compartilhar-icones.active li a {
+     margin-left: -15px;
+      height: 60px;
+      width: 60px;
+      font-size: 2.5rem;
+      display: flex;
+      box-sizing: border-box;
+   }
+   
+}
+@media screen and (max-width:385px) {
+   .compartilhar-icones.active li  {
+    margin-left: -19px;
+   
+   }
+   
+   .compartilhar-icones.active li a {
+     margin-left: 8px;
+      height: 40px;
+      width: 40px;
+      font-size: 1.5rem;
+      display: flex;
+   }
+   
+}
+@media screen and (max-width:375px) {
+   .compartilhar-icones.active li  {
+    margin-left: -29px;
+   
+   }
+   
+   .compartilhar-icones.active li a {
+     margin-left: 8px;
+      height: 40px;
+      width: 40px;
+      font-size: 1.5rem;
+      display: flex;
+   }
+   
+}
+@media screen and (max-width:335px) {
+   .compartilhar-icones.active li  {
+    margin-left: -49px;
+   
+   }
+   
+   .compartilhar-icones.active li a {
+     margin-left: 18px;
+      height: 40px;
+      width: 40px;
+      font-size: 1.5rem;
+      display: flex;
+   }
+   
 }
