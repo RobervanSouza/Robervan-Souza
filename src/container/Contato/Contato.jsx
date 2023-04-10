@@ -13,13 +13,7 @@ import { BiGitMerge } from "react-icons/bi";
 
 function Contato() {
   useEffect(() => {
-    function ShareVideo() {
-      var videoUrl = "https://www.youtube.com/watch?v=VIDEO_ID";
-      var shareUrl =
-        "https://www.youtube.com/share?url=" + encodeURIComponent(videoUrl);
-      window.open(shareUrl, "_blank");
-    }
-
+   
     let links = document.querySelector(".compartilhar-links");
     let icone = document.querySelector(".compartilhar-icones");
     links.onclick = function () {
