@@ -10,7 +10,7 @@
 }
 
 
-.formulario{
+.mensagem-formulario{
   align-items: center;
   justify-content: center;flex-direction: column;
   background-color: rgb(86, 53, 53);
@@ -20,4 +20,29 @@
   display: flex;
   width: 390px;
   height: 390px;
+}
+.messagem-usuario{
+  width: 174px;
+  height: 94px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+}
+
+
+.estrelas input[type=radio] {
+  display: none;
+  cursor: pointer;
+}
+.estrelas label i.fa{
+  font-size: 2.5em
+}
+.estrelas label i.fa:before {
+  content:'\f005';
+  color: #FC0;
+}
+.estrelas input[type=radio]:checked ~ label i.fa:before {
+  color: #CCC;
+  cursor: pointer;
 }
