@@ -42,14 +42,12 @@ function Contato() {
                   <span> (89) 99453-2058</span>
                 </i>
               </li>
-              <li>
-                <i className="icone-contato">
-                  <span className="email">
-                    <FcAddressBook />
-                    rob.robervan@hotmail.com
-                  </span>
-                </i>
-              </li>
+              <i className="icone-contato">
+                <a href="mailto:rob.robervan@hotmail.com" class="email">
+                  <FcAddressBook />
+                  rob.robervan@hotmail.com
+                </a>
+              </i>
             </ul>
           </div>
           <div className="card-nome">
@@ -132,7 +130,7 @@ function Contato() {
             </a>
           </li>
 
-          <li style={{ "--i": 3}}>
+          <li style={{ "--i": 3 }}>
             <a
               href=" https://telegram.me/share/url?url=https://potifolio-robervan-souza.vercel.app/"
               target="_blank"
@@ -151,7 +149,7 @@ function Contato() {
               <FaTwitter />
             </a>
           </li>
-        
+
           <li style={{ "--i": 5 }}>
             <a
               href="https://api.whatsapp.com/send?text=https://potifolio-robervan-souza.vercel.app/"
@@ -161,7 +159,6 @@ function Contato() {
               <FaWhatsapp />
             </a>
           </li>
-        
         </div>
       </div>
     </>
