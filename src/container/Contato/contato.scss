@@ -539,10 +539,10 @@ border-radius: 50%;
   left: 32px;
   list-style: none;
   transition: 0.5s;
-  transform:  rotate(calc(360deg/8 * var(--i)));
+  transform:  rotate(calc(360deg/5 * var(--i)));
   transform-origin: 140px;
   scale: 0;
-  transition-delay: calc(0.5s * var(--i));
+  transition-delay: calc(0.2s * var(--i));
 }
 @media screen and (max-width:600px) {
    .compartilhar-icones li{
@@ -585,7 +585,7 @@ border-radius: 50%;
 .compartilhar-icones li a {
   position: relative;
   display: flex;
-  transform: rotate(calc(360deg/-8 * var(--i)));
+  transform: rotate(calc(360deg/-5 * var(--i)));
   font-size: 2.5rem;
   height: 60px;
   width: 60px;

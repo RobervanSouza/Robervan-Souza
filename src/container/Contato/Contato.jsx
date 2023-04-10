@@ -5,6 +5,9 @@ import {
   FaGithub,
   FaLinkedin,
   FaFacebook,
+  FaTwitter,
+  FaInstagramSquare,
+  FaTelegramPlane,
 } from "react-icons/fa";
 import { AppWrap } from "../../wrapper";
 import { FcBusinessContact, FcAddressBook } from "react-icons/fc";
@@ -111,71 +114,54 @@ function Contato() {
 
           <li style={{ "--i": 1 }}>
             <a
-              href="https://www.linkedin.com/in/robervan-souza/"
+              href="https://www.linkedin.com/sharing/share-offsite/?url=https://potifolio-robervan-souza.vercel.app/"
               target="_blank"
-              style={{ color: "blue" }}
-              rel="noreferrer">
+              rel="noreferrer"
+              style={{ color: "blue" }}>
               <FaLinkedin />
             </a>
           </li>
+
           <li style={{ "--i": 2 }}>
             <a
-              href="https://www.facebook.com/sua_pagina"
+              href="https://www.facebook.com/sharer/sharer.php?u=https://potifolio-robervan-souza.vercel.app/"
               target="_blank"
-              rel="noreferrer"
+              rel="noopener noreferrer"
               style={{ color: "#3b5998" }}>
               <FaFacebook />
             </a>
           </li>
-          <li style={{ "--i": 3 }}>
+
+          <li style={{ "--i": 3}}>
             <a
-              href="https://www.linkedin.com/in/robervan-souza/"
+              href=" https://telegram.me/share/url?url=https://potifolio-robervan-souza.vercel.app/"
               target="_blank"
               rel="noreferrer"
-              style={{ color: "red" }} onClick="ShareVideo">
-              <FaYoutube />
+              style={{ color: "#0088CC" }}>
+              <FaTelegramPlane />
             </a>
           </li>
+
           <li style={{ "--i": 4 }}>
             <a
-              href="https://www.linkedin.com/in/robervan-souza/"
+              href="https://twitter.com/intent/tweet?url=https://potifolio-robervan-souza.vercel.app/"
               target="_blank"
-              rel="noreferrer">
-              <FaLinkedin />
+              rel="noreferrer"
+              style={{ color: "#00acee" }}>
+              <FaTwitter />
             </a>
           </li>
+        
           <li style={{ "--i": 5 }}>
             <a
-              href="https://www.linkedin.com/in/robervan-souza/"
+              href="https://api.whatsapp.com/send?text=https://potifolio-robervan-souza.vercel.app/"
               target="_blank"
-              rel="noreferrer">
-              <FaLinkedin />
+              rel="noreferrer"
+              style={{ color: " #25D366" }}>
+              <FaWhatsapp />
             </a>
           </li>
-          <li style={{ "--i": 6 }}>
-            <a
-              href="https://www.linkedin.com/in/robervan-souza/"
-              target="_blank"
-              rel="noreferrer">
-              <FaLinkedin />
-            </a>
-          </li>
-          <li style={{ "--i": 7 }}>
-            <a
-              href="https://www.linkedin.com/in/robervan-souza/"
-              target="_blank"
-              rel="noreferrer">
-              <FaLinkedin />
-            </a>
-          </li>
-          <li style={{ "--i": 8 }}>
-            <a
-              href="https://www.linkedin.com/in/robervan-souza/"
-              target="_blank"
-              rel="noreferrer">
-              <FaLinkedin />
-            </a>
-          </li>
+        
         </div>
       </div>
     </>
