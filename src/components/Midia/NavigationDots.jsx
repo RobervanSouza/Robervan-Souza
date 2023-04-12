@@ -1,10 +1,10 @@
 import "./scss/Midia.scss"
 import {
   FcAbout,
-  
+  FcIdea,
   FcManager,
   FcContacts,
-  FcElectronics,
+
   FcRegisteredTrademark,
 } from "react-icons/fc";
 const NavigationDots = ({ active }) => (
@@ -12,7 +12,7 @@ const NavigationDots = ({ active }) => (
     {[
       { name: "home", icon: <FcRegisteredTrademark size={47} /> },
       { name: "sobre", icon: <FcAbout size={47} /> },
-      { name: "projetos", icon: <FcElectronics size={47} /> },
+      { name: "projetos", icon: <FcIdea size={47} /> },
       { name: "experiencias", icon: <FcManager size={47} /> },
       { name: "contato", icon: <FcContacts size={47} /> },
     ].map((item, index) => (
@@ -29,9 +29,6 @@ const NavigationDots = ({ active }) => (
           justifyContent: "center",
           marginTop: 16,
           marginLeft: 34,
-        
-
-          
         }}>
         <div className="icones">
           <p className="teste3">{item.icon}</p>
