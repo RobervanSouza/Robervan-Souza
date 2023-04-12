@@ -1,11 +1,16 @@
 import React from "react";
-import { Sobre, Experiencias, Projeto, Contato, Mensagem } from "./container";
+import {
+  Sobre,
+  ProjetosCurso,
+  ExperienciaProf,
+  Contato,
+  Mensagem,
+} from "./container";
 import { Navbar } from "./components";
 import "./App.scss";
 import Home from "./container/home/Home";
 
 const App = () => {
-  
   return (
     <div className="app">
       <div className="app-navbar">
@@ -21,12 +26,13 @@ const App = () => {
       </div>
 
       <div className="app-experiencia">
-        <Experiencias />
+        <ProjetosCurso />
       </div>
 
       <div className="app-projeto">
-    
-        <Projeto />
+        <div className="app2">
+          <ExperienciaProf />
+        </div>
       </div>
 
       <div className="app-contato">

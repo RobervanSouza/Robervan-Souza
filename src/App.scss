@@ -355,12 +355,27 @@ padding: 8px 22px;
   justify-content: center;
 
 }
+.appv4{
+  background-color: red;
+}
 
 .app-contato{
-  background: var(--cor-fundo);
+  background-color: #385f8f;
+  padding: 3rem;
   align-items: center;
   justify-content: center;
   display: flex;
   flex-direction: column;
-  padding: 4px 4px;
+  
+ 
+}
+.app-projeto{
+
+  padding: 3rem, 3rem;
+  
+
+}
+.app2{
+  
+    padding: 3rem 2rem;
 }

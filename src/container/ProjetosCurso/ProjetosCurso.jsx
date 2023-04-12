@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import "./Experiencias.scss";
+import "./ProjetosCurso.scss";
 import { images } from "../../constants";
 import { AiFillEye, AiFillGithub } from "react-icons/ai";
 import { motion } from "framer-motion";
@@ -58,7 +58,7 @@ const experiencia = [
   },
 ];
 
-function Experiencias() {
+function ProjetosCurso() {
     
     const [filterWork, setFilterWork] = useState([]);
     
@@ -169,4 +169,4 @@ function Experiencias() {
   );
 }
 
-export default AppWrap(Experiencias, "experiencias");
+export default AppWrap(ProjetosCurso, "projetos");
