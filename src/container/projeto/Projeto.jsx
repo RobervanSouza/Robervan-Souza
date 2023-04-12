@@ -1,31 +1,33 @@
 import React from "react";
 import { motion } from "framer-motion";
 
-import { AppWrap, MotionWrap } from "../../../src/wrapper";
+import { AppWrap} from "../../../src/wrapper";
 import { images } from "../../constants";
 import "./Projeto.scss";
 
 const skills = [
   {
-    name: "Perola Negra Convites",
+    name: "Pérola Negra",
     imgUrlFront: images.perlanegraconvites,
     função: "Marketign digital",
     year: [2018, " a ", 2022],
     descricao: "Desenvolvendo produtos e atendimento ao cliente",
   },
   {
-    name: "Grendene",
+    name:"Grendene",
     imgUrlFront: images.grendene,
-    função: "Técnico Mecatrônico",
-    year: [2014, " a ", 2018],
-    descricao: "Manutenção em maquina injetoras de calçados da GOLDENMAQ. Implementado alguns sistemas de inivação da industria 4.0  ",
+    função:   "Técnico Mecatrônico",
+    year  :  [ 2014, " a ", 2018],
+    descricao:
+      "Manutenção em maquina injetoras de calçados da GOLDENMAQ. Implementado alguns sistemas de inivação da industria 4.0  ",
   },
   {
     name: "Petrobras",
     imgUrlFront: images.petrobras,
     função: "Suporte Técnico",
     year: [2013, " a ", 2014],
-    descricao: "Suporte técnico com o CLP Bentle-Nevada da GE. Durante o periodo de 6 meses trabalhando tercerizado, otimizando o fluxo de petróleo",
+    descricao:
+      "Suporte técnico com o CLP Bentle-Nevada da GE. Durante o periodo de 6 meses trabalhando tercerizado, otimizando o fluxo de petróleo",
   },
   {
     name: "Dresser-Rand",
@@ -37,20 +39,19 @@ const skills = [
   {
     name: "Trexcon",
     imgUrlFront: images.trexcon,
-    função: "Montador de painel pleno",
-    year: [2013, " a ", 2014],
+    função:" Montador de painel pleno",
+    year: [ 2013, " a ", 2014],
     descricao: "Montagem de painel para plataforma e usinas da petrobras ",
   },
- 
+
   {
     name: "NovaKoasin",
     imgUrlFront: images.novakoasin,
     função: "Montador de painel pleno",
     year: [2011, " a ", 2013],
-    descricao: "Montagem de painel para substação de eneergia, montagem de sistema de cameras para ônibus e sistema de semáfaro ",
+    descricao:
+      "Montagem de painel para substação de eneergia, montagem de sistema de cameras para ônibus e sistema de semáfaro ",
   },
- 
- 
 ];
 
 const Projeto = () => {
@@ -64,12 +65,10 @@ const Projeto = () => {
         </div>
 
         <div className="app__skills-container">
-         
           <motion.div className="app__skills-list">
             {skills.map((skill) => (
               <>
                 <div className="card">
-                 
                   <div className="card-front">
                     <div className="inner">
                       <img
@@ -81,17 +80,17 @@ const Projeto = () => {
                     </div>
                   </div>
                   <div className="card-back">
-                    <div className="inner">
-                      <h6 className="ano">
+                 
+                    <div className="inner fundo">
+                      <h6 className="colorfuncao">
                         {" "}
-                        Periodo:<span className="colorfunção">
-                        {skill.year}
-                          </span>{" "}
+                        Periodo:
+                        <span className="colorfuncao">{skill.year}</span>{" "}
                       </h6>
                       <h6>
                         {" "}
                         Função:{" "}
-                        <span className="colorfunção">
+                        <span className="colorfuncao">
                           {" "}
                           {skill.função}
                         </span>{" "}
@@ -99,7 +98,7 @@ const Projeto = () => {
                       <h6>
                         {" "}
                         Descrição:{" "}
-                        <span className="colorfunção">
+                        <span className="colorfuncao">
                           {" "}
                           {skill.descricao}
                         </span>{" "}

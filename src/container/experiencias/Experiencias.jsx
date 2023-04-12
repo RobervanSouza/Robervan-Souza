@@ -84,7 +84,7 @@ function Experiencias() {
     <>
       <div className="experiencia">
         <div className="containerEx">
-          <h2 className="head-text">Meus Projetos</h2>
+          <h2 className="head-text">Projetos</h2>
 
           <div className="app__work-filter">
             {["Front-End", "Back-End", "Full-Stack", "Mobile App", "Todos"].map(

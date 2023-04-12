@@ -120,8 +120,9 @@ padding: 20px 20px;
   height: 230px;
  
   background-color: rgb(109, 100, 100);
-  background-image: url("../../assets/fundoteste3.jpg");
-  background-size: cover;
+  background-image: url("../../assets/carteira.jpg");
+    background-size: 100% 100%;
+  border-radius: 14px;
   background-position: center;
   text-align: center;
   backface-visibility: hidden;
@@ -130,13 +131,19 @@ padding: 20px 20px;
    transition: transform 3s ease;
 
 }
+
+.card-imagem{
+  border-radius: 13px;
+}
+
+
 .card-front{
   transform: rotateY(0deg);
    transition: transform 3s ease;
 }
 
 .card-back{
-  
+
   position: absolute;
   top: 0;
   left: 0;
@@ -156,6 +163,7 @@ padding: 20px 20px;
 }
 
 .card-front .inner{
+  
   width: 100%;
   height: min-content;
   padding: 10px;
@@ -167,6 +175,7 @@ padding: 20px 20px;
   
 }
 .card-back .inner{
+  
   width: 100%;
   height: 230px;
   align-items: center;
@@ -179,37 +188,43 @@ padding: 20px 20px;
   z-index: 2;
   
 }
+.fundo h6{
+  margin-top: 13px;
+  
+}
 .card-back .inner .ano{
  
-  color:rgb(6, 6, 6);
+  color:rgb(69, 244, 6);
   font-family:'Times New Roman', Times, serif
 }
 
-.colorfunção{
-  color: rgb(0,0,255);
+.colorfuncao{
+  color: rgb(8, 8, 8);
 }
 
 
 .inner .card-imagem{
   width: 90px;
-  margin-bottom: 20px;
+  margin-bottom: 5px;
 }
 
 
 .inner h3{
   margin-bottom: 8px;
-  color: rgb(13, 11, 11);
+  color: rgb(12, 13, 11);
   font-size: 30px;
   font-weight: 700;
   line-height: 40px;
   text-transform: capitalize;
 }
 .inner h6{
+  
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: black;
+  color: rgba(237, 4, 4, 0.744);
   font-weight: 900;
   font-size: 16px;
   line-height: 18px;
+  padding: 0 2px;
 }
 .card-back .inner{
   margin-top: 23px;

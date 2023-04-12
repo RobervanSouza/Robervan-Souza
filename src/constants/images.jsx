@@ -1,5 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 import grendene from '../assets/grendene.png';
+import carteira from '../assets/carteira.jpg';
 import arroba from "../assets/arroba.png";
 import grendeneimg from '../assets/grendeneimagem.jpeg';
 import novakoasin from '../assets/nova-koasin.png';
@@ -56,6 +57,7 @@ import cursos from '../assets/programacao-linguagem.jpg';
 import logo1  from '../assets/logonome.png';
 export default {
   arroba,
+  carteira,
   perlanegraconvites,
   perlanegraconvitesimg,
   grendene,
