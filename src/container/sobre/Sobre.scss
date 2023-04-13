@@ -589,8 +589,9 @@
     transform: rotateZ(0deg);
   }
 }
-.head-text{
+.head-text span{
   z-index: 99;
+  
 }
 .ocultarDescricao{
   display: none;
