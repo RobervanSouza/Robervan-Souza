@@ -3,7 +3,7 @@
 :root {
   --font-base: "DM Sans", sans-serif;
 
-  --cor-frente:   #385f8f ;
+  --cor-frente: #385f8f;
   --cor-fundo: rgb(169, 164, 164);
   --primary-color: #edf2f8;
   --secondary-color: #313bac;
@@ -12,12 +12,38 @@
   --gray-color: #030303;
   --brown-color: #46364a;
   --white-color: #ffffff;
-  
 }
+
 
 * {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
   scroll-behavior: smooth;
+
 }
+@media screen and (min-width: 768px) {
+* {
+  scrollbar-width: 2px;
+  scrollbar-color: rgb(0, 255, 89);
+
+}
+::-webkit-scrollbar {
+  width: 32px;
+  background-color: #7c957d2a;
+}
+*::-webkit-scrollbar-track {
+  width: 12px;
+}
+*::-webkit-scrollbar-thumb {
+  background: url("./assets/scroll.png");
+  border-radius: 43px;
+  
+ 
+  background-size: 100% 50%;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+  
+  }
