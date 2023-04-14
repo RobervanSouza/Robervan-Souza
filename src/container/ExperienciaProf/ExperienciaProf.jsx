@@ -61,7 +61,7 @@ const ExperienciaProf = () => {
      
           <div>
             <h2 className="head-text">
-              Experiências <span>Durante </span> 13 anos de trabalho
+              Experiências <span> durante </span> 13 anos de trabalho
             </h2>
           </div>
 

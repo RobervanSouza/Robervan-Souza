@@ -21,7 +21,7 @@ const experiencia = [
   },
   {
     title: "Vigilantes do sono",
-    description: "Projeto do Bootcamp, que mostra gaficos vigilantes do sono",
+    description: "Projeto do Bootcamp, que mostra gráficos vigilantes do sono",
     tecnologias: "Ract, TypeScript, Axios, ApexCharts, StyleComponents ",
     projectLink: "https://github.com/RobervanSouza",
     imgUrl: images.vigilantes,

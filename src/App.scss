@@ -141,7 +141,10 @@
 }
 
 .v1{
-  background-color: rgb(169, 164, 164);
+   background: url("./assets/fundo11.avif");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 
 }
 .bolas{
@@ -282,7 +285,10 @@ display: none;
 
 .app-sobre{
 
- background-color: var(--cor-fundo);
+  background: url("../src/assets/fundo11.avif");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
 padding: 8px 22px;
 
 
@@ -348,7 +354,10 @@ padding: 8px 22px;
 
 }
 .app-experiencia{
-  background-color: var(--cor-fundo);
+  background: url("./assets/fundo11.avif");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 3rem 2rem;
   align-items: center;
   display: flex;
@@ -357,7 +366,10 @@ padding: 8px 22px;
 }
 
 .app-contato{
- background-color: var(--cor-fundo);
+   background: url("./assets/fundo11.avif");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
   padding: 3rem;
   align-items: center;
   justify-content: center;
@@ -373,6 +385,9 @@ padding: 8px 22px;
 
 }
 .app2{
-  
+     background: url("./assets/fundo11.avif");
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
     padding: 3rem 2rem;
 }

@@ -5,7 +5,7 @@
 
 }
 .experiencia{
-  background-color: var(--cor-frente);
+ 
   align-items: center;
   display: flex;
   justify-content: center;
@@ -24,7 +24,10 @@
   
 }
 .containerEx{
-  background-color: var(--cor-frente);
+  background: var(--cor-frente);
+  background-size: 100% 100%;
+  background-position: center;
+  background-repeat: no-repeat;
   align-items: center;
   display: flex;
   justify-content: center;
@@ -48,7 +51,7 @@
   border-radius: 12px;
    @media screen and (max-width: 400px) {
      
-   
+    
 
     }
   
@@ -57,7 +60,7 @@
   content: "";
   position: absolute;
   inset: -19px;
-  box-shadow:  0 0 0 8px var(--cor-frente);
+  box-shadow:  0 0 0 8px  #10100f;
   pointer-events: none;
   z-index: -1;
   border-radius: 12px;
@@ -106,9 +109,10 @@
   .app__work-filter-item {
     padding: 0.5rem 1rem;
     border-radius: 0.5rem;
-    background-color: #fff;
+    background-color: #efe6e6;
     color: #000;
     font-weight: 800;
+    border: 3px solid #eadd26;
     
 
     cursor: pointer;
