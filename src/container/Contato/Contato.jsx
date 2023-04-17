@@ -6,7 +6,7 @@ import {
   FaLinkedin,
   FaFacebook,
   FaTwitter,
-  FaInstagramSquare,
+ 
   FaTelegramPlane,
 } from "react-icons/fa";
 import { AppWrap } from "../../wrapper";
@@ -45,7 +45,7 @@ function Contato() {
               <i className="icone-contato">
                 <a href="mailto:rob.robervan@hotmail.com" class="email">
                   <FcAddressBook />
-                  rob.robervan@hotmail.com
+                  rob.robervan@hotmail.com 
                 </a>
               </i>
             </ul>
