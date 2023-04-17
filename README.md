@@ -6,4 +6,4 @@
 # Meu portifio
 ## Nesse portifio mostro um pouco do meu conhecimento.
 
-![Resultado final do projeto]("/src/assets/capa.png")
+![Resultado final do projeto](assets/capa.png)
