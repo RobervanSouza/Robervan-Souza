@@ -3,8 +3,8 @@
   📰 <br>Portfólio - Robervan Souza
 </h1>
 
-# Meu portifio
-## Nesse portifio mostro um pouco do meu conhecimento.
+# Meu portifolio
+## Nesse portifolio comtem um pouco do meu conhecimento.
 
 ![Resultado final do projeto](/src/assets/capa.png)
 <h4 align="center"><a href="https://potifolio-robervan-souza.vercel.app/">Clique para acessar meu portifolio</a></h4>
