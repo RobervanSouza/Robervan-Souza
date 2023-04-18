@@ -490,7 +490,7 @@ border-radius: 50%;
     align-items: center;
     display: flex;
     justify-content: center;
-    
+    flex-wrap: wrap;
 
 }
 .compartilhar-links {
@@ -556,7 +556,7 @@ border-radius: 50%;
    .cards{
     flex-wrap: wrap;
     box-sizing: border-box;
-    margin-left: -24px;
+  
    }
 }
 @media screen and (max-width:512px) {
@@ -603,9 +603,9 @@ border-radius: 50%;
   border-radius: 50%;
   gap: 13px;
 }
-@media screen and (max-width:512px) {
+@media screen and (max-width:612px) {
    .compartilhar-icones.active li  {
-    margin-left: 52px;
+    margin-left: 32px;
   
    }
    
@@ -619,15 +619,63 @@ border-radius: 50%;
    }
    
 }
-
-@media screen and (max-width:375px) {
+@media screen and (max-width:555px) {
    .compartilhar-icones.active li  {
-    margin-left: 49px;
+    margin-left: 12px;
+  
+   }
+   
+   .compartilhar-icones.active li a {
+     margin-left: -15px;
+      height: 60px;
+      width: 60px;
+      font-size: 2.5rem;
+      display: flex;
+      box-sizing: border-box;
+   }
+   
+}
+@media screen and (max-width:512px) {
+   .compartilhar-icones.active li  {
+    margin-left: 2px;
+  
+   }
+   
+   .compartilhar-icones.active li a {
+     margin-left: -15px;
+      height: 60px;
+      width: 60px;
+      font-size: 2.5rem;
+      display: flex;
+      box-sizing: border-box;
+   }
+   
+}
+@media screen and (max-width:477px) {
+   .compartilhar-icones.active li  {
+    margin-left: -22px;
+  
+   }
+   
+   .compartilhar-icones.active li a {
+     margin-left: 5px;
+      height: 40px;
+      width: 40px;
+      font-size: 1.5rem;
+      display: flex;
+      box-sizing: border-box;
+   }
+   
+}
+
+@media screen and (max-width:422px) {
+   .compartilhar-icones.active li  {
+    margin-left: -32px;
    
    }
    
    .compartilhar-icones.active li a {
-     margin-left: 8px;
+     margin-left: 12px;
       height: 40px;
       width: 40px;
       font-size: 1.5rem;
@@ -635,16 +683,46 @@ border-radius: 50%;
    }
    
 }
-@media screen and (max-width:335px) {
+@media screen and (max-width:395px) {
    .compartilhar-icones.active li  {
-    margin-left: -29px;
+    margin-left: -49px;
    
    }
    
    .compartilhar-icones.active li a {
-     margin-left: 8px;
+     margin-left: 12px;
       height: 40px;
       width: 40px;
+      font-size: 1.5rem;
+      display: flex;
+   }
+   
+}
+@media screen and (max-width:365px) {
+   .compartilhar-icones.active li  {
+    margin-left: -59px;
+   
+   }
+   
+   .compartilhar-icones.active li a {
+     margin-left: 28px;
+      height: 30px;
+      width: 30px;
+      font-size: 1.5rem;
+      display: flex;
+   }
+   
+}
+@media screen and (max-width:358px) {
+   .compartilhar-icones.active li  {
+    margin-left: -59px;
+   
+   }
+   
+   .compartilhar-icones.active li a {
+     margin-left: 28px;
+      height: 30px;
+      width: 30px;
       font-size: 1.5rem;
       display: flex;
    }
