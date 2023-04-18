@@ -13,7 +13,7 @@ function Navbar() {
         <img src={images.logo} alt="logo" />
       </div>
       <ul className="app__navbar-links">
-        {["home", "sobre", "experiencias", "projetos", "contato"].map(
+        {["home", "sobre", "projetos", "experiencias", "contato"].map(
           (itens) => (
             <li className="app__flex p-text" key={`link-${itens}`}>
               <div />
@@ -23,29 +23,23 @@ function Navbar() {
         )}
       </ul>
       <div className="app__navbar-menu">
-        
-
         <HiOutlineMenuAlt4 onClick={() => setMenu(true)} />
-        
+
         {menu && (
           <motion.div
             whileInView={{ x: [100, 0] }}
             transition={{ duration: 0.85, ease: "easeOut" }}>
             <HiOutlineX onClick={() => setMenu(false)} />
             <ul>
-              {[
-                "home",
-                "sobre",
-                "experiencias",
-                "projetos",              
-                "contato",
-              ].map((itens) => (
-                <li key={itens}>
-                  <a href={`#${itens}`} onClick={() => setMenu(false)}>
-                    {itens}
-                  </a>
-                </li>
-              ))}
+              {["home", "sobre", "experiencias", "projetos", "contato"].map(
+                (itens) => (
+                  <li key={itens}>
+                    <a href={`#${itens}`} onClick={() => setMenu(false)}>
+                      {itens}
+                    </a>
+                  </li>
+                )
+              )}
             </ul>
           </motion.div>
         )}
