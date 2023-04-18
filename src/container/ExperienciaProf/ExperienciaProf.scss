@@ -114,13 +114,29 @@ padding: 20px 20px;
  transform-style: preserve-3d;
  perspective: 1000px;
 }
-.card-front, 
+
 .card-back {
   width: 230px;
   height: 230px;
  
-  background-color: rgb(109, 100, 100);
-  background-image: url("../../assets/carteira.jpg");
+
+  background-image: url("../../assets/teste-fundo.jpg");
+    background-size: 100% 100%;
+  border-radius: 14px;
+  background-position: center;
+  text-align: center;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  transition: transform 0.7s cubic-bezier(0.4, 0.2, 0.2, 1);
+   transition: transform 3s ease;
+
+}
+.card-front {
+  width: 230px;
+  height: 230px;
+ 
+  
+background-image: url("../../assets/teste-fundo2.jpg");
     background-size: 100% 100%;
   border-radius: 14px;
   background-position: center;
@@ -200,7 +216,7 @@ padding: 20px 20px;
 }
 
 .colorfuncao{
-  color: rgb(8, 8, 8);
+  color: yellow;
 }
 
 
@@ -212,7 +228,7 @@ padding: 20px 20px;
 
 .inner h3{
   margin-bottom: 8px;
-  color: rgb(12, 13, 11);
+  color: yellow;
   font-size: 30px;
   font-weight: 700;
   line-height: 40px;
@@ -221,7 +237,7 @@ padding: 20px 20px;
 .inner h6{
   
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-  color: rgba(237, 4, 4, 0.744);
+  color: white;
   font-weight: 900;
   font-size: 16px;
   line-height: 18px;
@@ -242,7 +258,7 @@ padding: 20px 20px;
    transition: transform 3s ease;
 }
 .projeto{
-  background-color: var(--cor-frente);
+   background: linear-gradient(90deg, rgb(3, 0, 15),rgba(3, 0, 15, 0.902), rgb(3, 0, 15), rgba(3, 0, 15, 0.861) ,rgb(3, 0, 15), rgba(3, 0, 15, 0.895), rgb(3, 0, 15));
   border: 4px solid black;
   border-radius: 14px;
 }

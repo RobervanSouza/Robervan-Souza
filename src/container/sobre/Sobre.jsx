@@ -54,7 +54,7 @@ function Sobre() {
             <h1>
               <BiArrowFromLeft /> <BiArrowFromRight />
             </h1>
-          </div>
+          </div> 
           Técnico Mecatrônico,
           <span> Desenvolvedor Full-Stack </span>
           <br /> E Cursando

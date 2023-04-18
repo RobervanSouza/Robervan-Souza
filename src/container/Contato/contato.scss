@@ -1,18 +1,18 @@
 
 .cards{
-   
+    
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 13px;
     width: 100%;
-    
     height: 100%;
     overflow: hidden;
     margin-left:-33px;
     align-items: center;
     justify-content: center;
-    background-color: var(--cor-frente);
+      background: linear-gradient(90deg, rgb(3, 0, 15),rgba(3, 0, 15, 0.902), rgb(3, 0, 15), rgba(3, 0, 15, 0.861) ,rgb(3, 0, 15), rgba(3, 0, 15, 0.895), rgb(3, 0, 15));
+     border-radius: 15px;
     border: 5px solid black;
     border-radius: 13;
 }
@@ -84,7 +84,7 @@
 
 .card-nome{
     position: absolute;
-    background: linear-gradient(90deg, #6D7AFF, #6cd5ff);
+    background: linear-gradient(90deg, #02153f, #0035f5, #1555ea, #144b0c);
     box-shadow: inset 50px 50px 500px #FFFFFF30;
     border-top-left-radius: 20px;
     border-top-right-radius: 20px;
@@ -480,7 +480,10 @@ border-radius: 50%;
 
 .compartilhar-icones{
   position: relative;
-    background-color: rgb(105, 95, 95);
+    background-image: url("../../assets/teste-fundo2.jpg");
+    background-size: 100% 100%;
+  border-radius: 14px;
+  background-position: center;
     width: 450px;
     height:350px;
     border-radius: 20px;
