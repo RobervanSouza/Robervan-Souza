@@ -30,7 +30,7 @@ Para o desenvolvimento do meu portifolio utilizei as seguintes tecnologias:
 - Css;
 
 ---
-<h2>🦄 Autor</h2>
+<h2>👨‍💻	 Autor</h2>
 
 <table>
   <tr>
