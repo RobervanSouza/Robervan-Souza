@@ -36,7 +36,7 @@ Para o desenvolvimento do meu portifolio utilizei as seguintes tecnologias:
   <tr>
     <td align="center">
       <a href="https://github.com/RobervanSouza">
-        <img src="https://avatars.githubusercontent.com/u/103292038?v=4" width="100px;" alt="Robervan souza"/><br>
+        <img src="https://avatars.githubusercontent.com/u/103292038?v=4" width="200px;" alt="Robervan souza"/><br>
         <sub>
           <b>Robervan Souza</b>
         </sub>
