@@ -6,7 +6,7 @@
   flex-direction: column;
   position: relative;
   padding: 2px 5px;
-  border: 3px solid var(--cor-frente);
+  border: 3px solid black;
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -22,7 +22,7 @@
   }
 
   &:hover {
-    box-shadow: 0 0 0 2px var(--cor-frente), 0 0 50px rgb(8, 26, 215),
+    box-shadow: 0 0 0 2px black, 0 0 50px rgb(8, 26, 215),
       0 0 100px rgb(8, 26, 215);
     animation: animate 8s linear infinite;
 
@@ -58,13 +58,13 @@
 }
 @keyframes animate {
   0% {
-    transform: rotateX(45deg) rotateY(360deg);
+    transform: rotateX(0deg) rotateY(0deg);
   }
   50% {
-    transform: rotateX(90deg) rotateY(0deg);
+    transform: rotateX(90deg) rotateY(90deg);
   }
   100% {
-    transform: rotateX(45deg) rotateY(0deg);
+    transform: rotateX(0deg) rotateY(0deg);
   }
 }
 /* ---------------- githb ----------------*/
@@ -83,7 +83,7 @@
   background-color: white;
   margin: 1.25rem 0;
   border: 1px solid white;
-  border: 3px solid var(--cor-frente);
+  border: 3px solid black;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -97,7 +97,7 @@
   }
 
   &:hover {
-    box-shadow: 0 0 0 2px var(--cor-frente), 0 0 50px black, 0 0 100px black;
+    box-shadow: 0 0 0 2px black, 0 0 50px black, 0 0 100px black;
     animation: botao 113s linear infinite;
 
     svg {
@@ -150,7 +150,7 @@
   margin: 1.25rem 0;
   border: 1px solid white;
   transition: all 0.3s ease-in-out;
-border: 3px solid var(--cor-frente);
+border: 3px solid black;
   svg {
     width: 25px;
     height: 35px;
@@ -158,7 +158,7 @@ border: 3px solid var(--cor-frente);
   }
 
   &:hover {
-    box-shadow: 0 0 0 1px var(--cor-frente), 0 0 50px red, 0 0 100px red;
+    box-shadow: 0 0 0 1px black, 0 0 50px red, 0 0 100px red;
     animation: rodaryoutube 3s linear infinite;
 
     svg {
@@ -190,7 +190,7 @@ border: 3px solid var(--cor-frente);
 
 /* ----------------navegação----------------*/
 .app__navigation-dot{
-  border: 3px solid var(--cor-frente);
+  border: 3px solid black;
 
   
 }
@@ -207,4 +207,10 @@ border: 3px solid var(--cor-frente);
   flex-direction: column;
   
 
+}
+.icones p{
+  
+  align-items: center;
+  display: flex;
+  justify-content: center;
 }

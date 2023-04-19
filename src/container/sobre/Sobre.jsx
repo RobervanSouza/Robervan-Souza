@@ -14,7 +14,7 @@ const sobres = [
   {
     titulo: "Desenvolvedor Full-Stack",
     descricao: "Formação desenvolvedor full-stack na BlueEdTech",
-    imgUrl: images.fullstack,
+    imgUrl: images.fundoDesenvolvedor,
   },
   {
     titulo: "Técnico Mecatrônico",
