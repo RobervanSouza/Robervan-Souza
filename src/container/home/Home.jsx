@@ -15,12 +15,11 @@ function Home() {
       <div className="home">
         <section className="nome">
           <div>
-            <h1>Sou Robervan Souza</h1>
+            <h1>Olá, Sou Robervan Souza</h1>
             <h2>
-              Formado em Desenvolvedor Full-Stack e 
-              Técnico Mecatrônico,  cursando Cyber Security. Estou aberto a
-              novos desafios e aprender outras tecnologias, e sempre buscando
-              mais conhecimento e me atualizando.
+              Formado em Técnico Mecatrônico, Desenvolvedor Full-Stack e 
+              cursando Cyber Security. Estou aberto a novos desafios e aprender novas tecnologias.
+              Estou sempre buscando me atualizar a novas linguagens, framworks e ChatGpt. Estou estudando a mais de um ano, fazendo projetos e cursos, todos disponivel em meu GitHub    
             </h2>
           </div>
         </section>
