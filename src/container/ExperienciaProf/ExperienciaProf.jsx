@@ -11,7 +11,7 @@ const skills = [
     imgUrlFront: images.perlanegraconvites,
     função: "Marketign digital",
     year: [2018, " a ", 2022],
-    descricao: "Desenvolvendo produtos e atendimento ao cliente",
+    descricao: "Desenvolvimento e acompanhamento de lojas em plataformas integradas e atendimento ao cliente."
   },
   {
     name:"Grendene",
@@ -19,7 +19,7 @@ const skills = [
     função:   "Técnico Mecatrônico",
     year  :  [ 2014, " a ", 2018],
     descricao:
-      "Manutenção em maquina injetoras de calçados da GOLDENMAQ. Implementado alguns sistemas de inivação da industria 4.0  ",
+      "Manutenção em máquinas injetoras de calçados da GOLDENMAQ. Implementando alguns sistemas de inovações da industria 4.0.  ",
   },
   {
     name: "Petrobras",
@@ -27,21 +27,21 @@ const skills = [
     função: "Suporte Técnico",
     year: [2013, " a ", 2014],
     descricao:
-      "Suporte técnico com o CLP Bentle-Nevada da GE. Durante o periodo de 6 meses trabalhando tercerizado, otimizando o fluxo de petróleo",
+      "Suporte técnico com o CLP Bentle-Nevada da GE. Durante o período de 06 meses, trabalhando tercerizado, e otimizando o fluxo de petróleo.",
   },
   {
     name: "Dresser-Rand",
     imgUrlFront: images.dresserange,
     função: "Montagem de painel para plataforma da petrobras",
     year: [2013, " a ", 2014],
-    descricao: "Montagem de painel de contrele de floxo de petróleo. ",
+    descricao: "Montagem de painel de controle de fluxo de petróleo. ",
   },
   {
     name: "Trexcon",
     imgUrlFront: images.trexcon,
     função:" Montador de painel pleno",
     year: [ 2013, " a ", 2014],
-    descricao: "Montagem de painel para plataforma e usinas da petrobras ",
+    descricao: "Montagem de painel para plataformas e usinas da petrobras. ",
   },
 
   {
@@ -50,7 +50,7 @@ const skills = [
     função: "Montador de painel pleno",
     year: [2011, " a ", 2013],
     descricao:
-      "Montagem de painel para substação de eneergia, montagem de sistema de cameras para ônibus e sistema de semáfaro ",
+      "Montagem de painel para substação de energia, montagem de sistema de câmeras para ônibus e sistemas de semáfaro. ",
   },
 ];
 

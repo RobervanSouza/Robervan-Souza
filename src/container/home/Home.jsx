@@ -15,7 +15,7 @@ function Home() {
       <div className="home">
         <section className="nome">
           <div>
-            <h1>Olá, Sou Robervan Souza</h1>
+            <h1>Olá, <span> Robervan Souza</span></h1>
             <h2>
               Formado em Técnico Mecatrônico, Desenvolvedor Full-Stack e 
               cursando Cyber Security. Estou aberto a novos desafios e aprender novas tecnologias.

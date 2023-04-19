@@ -44,39 +44,24 @@
 
 .nome h1 {
   margin-top: 3rem;
-  //font-family: 'Ballet', cursive;
-  //font-family: 'Exo', sans-serif;
-  //font-family: 'Jacques Francois Shadow', cursive;
-  //font-family: 'Josefin Sans', sans-serif;
-  //font-family: 'Roboto', sans-serif;
-  //font-family: 'Miss Fajardose', cursive;
-  //font-family: 'Montserrat Alternates', sans-serif;
-  //font-family: 'Oswald', sans-serif;
-  //font-family: 'Raleway', sans-serif;
-  //font-family: 'Rubik Maze', cursive;
+
   font-family: "Viaoda Libre", cursive;
-  //font-family: 'Exo', sans-serif;
- // font-family: 'Yanone Kaffeesatz', sans-serif;
+ 
   font-weight: 100;
   background-image: linear-gradient(to right, #f9f8f3, #faf4f2);
   -webkit-background-clip: text;
   background-clip: text;
-  color: transparent;
+  color: yellow;
   margin-bottom: 3rem;
 }
+
+.nome span{
+  color: white;
+}
 .nome h2 {
-  //font-family: "Ballet", cursive;
+  
   font-family: 'Exo', sans-serif;
-  //font-family: 'Jacques Francois Shadow', cursive;
-  //font-family: 'Josefin Sans', sans-serif;
-  //font-family: 'Metal Mania', cursive;
-  //font-family: 'Miss Fajardose', cursive;
-  //font-family: 'Montserrat Alternates', sans-serif;
-  //font-family: 'Oswald', sans-serif;
-  //font-family: 'Raleway', sans-serif;
-  //font-family: 'Rubik Maze', cursive;
-  //font-family: 'Viaoda Libre', cursive;
-  //font-family: 'Exo', sans-serif;
+ 
   font-weight: 100;
   font-size: 1rem;
   
