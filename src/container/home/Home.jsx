@@ -19,7 +19,7 @@ function Home() {
             <h2>
               Formado em Técnico Mecatrônico, Desenvolvedor Full-Stack e 
               cursando Cyber Security. Estou aberto a novos desafios e aprender novas tecnologias.
-              Estou sempre buscando me atualizar a novas linguagens, framworks e ChatGpt. Estou estudando a mais de um ano, fazendo projetos e cursos, todos disponivel em meu GitHub    
+              Estou sempre buscando me atualizar a novas linguagens, framworks e ChatGpt. Estou estudando a mais de um ano, fazendo projetos e cursos, todos disponivel em meu GitHub.    
             </h2>
           </div>
         </section>

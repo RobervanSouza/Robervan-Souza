@@ -13,7 +13,7 @@
   );
   align-items: center;
 
-  justify-content: center;
+  justify-content: space-around;
   gap: 12px;
   flex-wrap: wrap;
   flex-direction: row;
@@ -43,7 +43,7 @@
 }
 
 .nome h1 {
-  
+  margin-top: 3rem;
   //font-family: 'Ballet', cursive;
   //font-family: 'Exo', sans-serif;
   //font-family: 'Jacques Francois Shadow', cursive;
@@ -62,6 +62,7 @@
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
+  margin-bottom: 3rem;
 }
 .nome h2 {
   //font-family: "Ballet", cursive;
@@ -78,6 +79,7 @@
   //font-family: 'Exo', sans-serif;
   font-weight: 100;
   font-size: 1rem;
+  
 }
 
 
@@ -90,8 +92,8 @@
   align-items: center;
 }
 .foto img {
-  width: 220px;
-  height: 330px;
+  width: 320px;
+  height: 430px;
   display: flex;
   justify-content: center;
   align-items: center;
