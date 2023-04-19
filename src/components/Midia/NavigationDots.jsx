@@ -10,7 +10,7 @@ import {
 const NavigationDots = ({ active }) => (
   <div className="app__navigation">
     {[
-      { name: "home", icon: <FcRegisteredTrademark size={47} /> },
+      { name: "home", icon: <FcRegisteredTrademark size={47}  /> },
       { name: "sobre", icon: <FcAbout size={47} /> },
       { name: "projetos", icon: <FcIdea size={47} /> },
       { name: "experiencias", icon: <FcManager size={47} /> },

@@ -1,5 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
-
+@import url('https://fonts.googleapis.com/css2?family=Ballet&family=Exo:ital,wght@1,100&family=Jacques+Francois+Shadow&family=Josefin+Sans:ital,wght@0,400;1,300;1,500&family=Metal+Mania&family=Miss+Fajardose&family=Montserrat+Alternates:ital,wght@1,300&family=Oswald:wght@200&family=Raleway:wght@200&family=Roboto:ital,wght@1,300&family=Rubik+Maze&family=Viaoda+Libre&family=Yanone+Kaffeesatz:wght@200&display=swap');
+/*
+font-family: 'Ballet', cursive;
+font-family: 'Exo', sans-serif;
+font-family: 'Jacques Francois Shadow', cursive;
+font-family: 'Josefin Sans', sans-serif;
+font-family: 'Metal Mania', cursive;
+font-family: 'Miss Fajardose', cursive;
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Oswald', sans-serif;
+font-family: 'Raleway', sans-serif;
+font-family: 'Rubik Maze', cursive;
+font-family: 'Viaoda Libre', cursive;
+*/
 :root {
   --font-base: "DM Sans", sans-serif;
 

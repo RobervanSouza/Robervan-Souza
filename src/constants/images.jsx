@@ -51,7 +51,7 @@ import bolt from '../assets/bolt.png';
 import nb from '../assets/nb.png';
 import skype from '../assets/skype.png';
 import spotify from '../assets/spotify.png';
-import robervan from '../assets/robervan.jpeg';
+import robervan from '../assets/imagem-Robervan.png';
 import mecatronica from '../assets/mecatronica.jpg';
 import cybersecurity from '../assets/ciberseguranca.jpg';
 import cursos from '../assets/programacao-linguagem.jpg';

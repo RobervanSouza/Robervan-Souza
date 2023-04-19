@@ -1,9 +1,18 @@
 .home {
   width: 100%;
   height: 100%;
-   background: linear-gradient(90deg, rgb(3, 0, 15),rgba(3, 0, 15, 0.902), rgb(3, 0, 15), rgba(3, 0, 15, 0.861) ,rgb(3, 0, 15), rgba(3, 0, 15, 0.895), rgb(3, 0, 15));
+  background: linear-gradient(
+    90deg,
+    rgb(3, 0, 15),
+    rgba(3, 0, 15, 0.902),
+    rgb(3, 0, 15),
+    rgba(3, 0, 15, 0.861),
+    rgb(3, 0, 15),
+    rgba(3, 0, 15, 0.895),
+    rgb(3, 0, 15)
+  );
   align-items: center;
- 
+
   justify-content: center;
   gap: 12px;
   flex-wrap: wrap;
@@ -13,7 +22,6 @@
   border-radius: 15px;
 }
 
-
 .nome {
   width: 420px;
   height: 430px;
@@ -21,95 +29,97 @@
   display: flex;
   align-items: center;
   justify-content: center;
- margin-bottom: 3rem;
+  margin-bottom: 3rem;
 }
-.nome h1{
-  
+.nome h1 {
   color: white;
   font-size: 3rem;
 }
 
+@media screen and (max-width: 768px) {
+  .nome{
+    margin-top: 3rem;
+}
+}
 
-h1 {
-  font-size: 4em;
+.nome h1 {
+  
+  //font-family: 'Ballet', cursive;
+  //font-family: 'Exo', sans-serif;
+  //font-family: 'Jacques Francois Shadow', cursive;
+  //font-family: 'Josefin Sans', sans-serif;
+  //font-family: 'Roboto', sans-serif;
+  //font-family: 'Miss Fajardose', cursive;
+  //font-family: 'Montserrat Alternates', sans-serif;
+  //font-family: 'Oswald', sans-serif;
+  //font-family: 'Raleway', sans-serif;
+  //font-family: 'Rubik Maze', cursive;
+  font-family: "Viaoda Libre", cursive;
+  //font-family: 'Exo', sans-serif;
+ // font-family: 'Yanone Kaffeesatz', sans-serif;
+  font-weight: 100;
   background-image: linear-gradient(to right, #f9f8f3, #faf4f2);
   -webkit-background-clip: text;
   background-clip: text;
   color: transparent;
-  animation-name: brilho;
-  animation-duration: 1.5s;
-  animation-iteration-count: infinite;
 }
-
-@keyframes brilho {
-  0% {
-    -webkit-text-stroke: 1px rgb(250, 243, 243);
-    text-shadow: none;
-  }
-  50% {
-    -webkit-text-stroke: 2px rgb(250, 242, 242);
-    text-shadow: 0 0 10px rgba(219, 235, 4, 0.8);
-  }
-  100% {
-    -webkit-text-stroke: 1px rgb(247, 243, 243);
-    text-shadow: none;
-  }
+.nome h2 {
+  //font-family: "Ballet", cursive;
+  font-family: 'Exo', sans-serif;
+  //font-family: 'Jacques Francois Shadow', cursive;
+  //font-family: 'Josefin Sans', sans-serif;
+  //font-family: 'Metal Mania', cursive;
+  //font-family: 'Miss Fajardose', cursive;
+  //font-family: 'Montserrat Alternates', sans-serif;
+  //font-family: 'Oswald', sans-serif;
+  //font-family: 'Raleway', sans-serif;
+  //font-family: 'Rubik Maze', cursive;
+  //font-family: 'Viaoda Libre', cursive;
+  //font-family: 'Exo', sans-serif;
+  font-weight: 100;
 }
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 .foto {
-   width: 420px;
-  height: 430px;
-display: flex;
-justify-content: center;
-align-items: center;
-
-}
-.foto img{
   width: 420px;
   height: 430px;
   display: flex;
-justify-content: center;
-align-items: center;
+  justify-content: center;
+  align-items: center;
 }
-@media screen and (max-width:530px) {
-  .foto img{
-  width: 320px;
-  height: 320px;
-  order: 3;
-}
-}
-@media screen and (max-width:477px) {
-  .foto img{
-  width: 250px;
-  height: 250px;
-  order: 3;
-}
-}
-@media screen and (max-width:384px) {
-  .foto img{
+.foto img {
   width: 220px;
-  height: 220px;
-  order: 3;
+  height: 330px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+@media screen and (max-width: 530px) {
+  .foto img {
+    width: 320px;
+    height: 320px;
+    order: 3;
+  }
 }
-@media screen and (max-width:350px) {
-  .foto img{
-  width: 200px;
-  height: 200px;
-  order: 3;
+@media screen and (max-width: 477px) {
+  .foto img {
+    width: 250px;
+    height: 250px;
+    order: 3;
+  }
 }
+@media screen and (max-width: 384px) {
+  .foto img {
+    width: 220px;
+    height: 220px;
+    order: 3;
+  }
+}
+@media screen and (max-width: 350px) {
+  .foto img {
+    width: 200px;
+    height: 200px;
+    order: 3;
+  }
 }
