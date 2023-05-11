@@ -15,11 +15,18 @@ function Home() {
       <div className="home">
         <section className="nome">
           <div>
-            <h1>Olá, <span> Robervan Souza</span></h1>
+            <h1>
+              Olá, <span> Robervan Souza</span>
+            </h1>
             <h2>
-              Formado em Técnico Mecatrônico, Desenvolvedor Full-Stack e 
-              cursando Cyber Security. Estou aberto a novos desafios e aprender novas tecnologias.
-              Estou sempre buscando me atualizar a novas linguagens, framworks e ChatGpt. Estou estudando a mais de um ano, fazendo projetos e cursos, todos disponivel em meu GitHub.    
+              Olá, sou um Desenvolvedor Full-Stack, formado em Técnico
+              Mecatrônico e atualmente cursando Cyber Security. Sou apaixonado
+              por tecnologia e sempre busco me atualizar em novas linguagens,
+              frameworks e ferramentas. Com mais de um ano de experiência em
+              desenvolvimento, estou aberto a novos desafios e a aprender novas
+              tecnologias que possam agregar ao meu conhecimento. Além de
+              projetos pessoais, também dedico parte do meu tempo para cursos e
+              estudos que compartilho em meu GitHub.
             </h2>
           </div>
         </section>
