@@ -30,6 +30,16 @@ const experiencia = [
     tags: ["Front-End", "Todos"],
   },
   {
+    title: "Bella Conceito",
+    description: "Loja de Roupas",
+    tecnologias: "Html, Css, JavaScript",
+    projectLink:
+      "https://github.com/RobervanSouza/Bella-Conceito-pg01-mentoria",
+    imgUrl: images.bellaconceito,
+    codeLink: "https://bella-conceito-pg01-mentoria.vercel.app/",
+    tags: ["Front-End", "Todos"],
+  },
+  {
     title: "Back-End",
     description: "teste",
     tecnologias: "Desenvolvedor",

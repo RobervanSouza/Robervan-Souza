@@ -1,5 +1,6 @@
 /* eslint-disable import/no-anonymous-default-export */
 import fundoDesenvolvedor from '../assets/foto-desenvolvedor.png';
+import bellaconceito from '../assets/bellaconceito.png';
 import grendene from '../assets/grendene.png';
 import carteira from '../assets/carteira.jpg';
 import arroba from "../assets/arroba.png";
@@ -57,6 +58,7 @@ import cybersecurity from '../assets/ciberseguranca.jpg';
 import cursos from '../assets/programacao-linguagem.jpg';
 import logo1  from '../assets/logonome.png';
 export default {
+  bellaconceito,
   fundoDesenvolvedor,
   arroba,
   carteira,
