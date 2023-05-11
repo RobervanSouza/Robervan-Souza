@@ -4,7 +4,7 @@
 </h1>
 
 # Meu portifolio
-## Nesse portifolio comtem um pouco do meu conhecimento.
+## Nesse portifolio contem um pouco do meu conhecimento e desafios que aprendi durante o curso.
 
 ![Resultado final do projeto](/src/assets/capa.png)
 <h4 align="center"><a href="https://potifolio-robervan-souza.vercel.app/">Clique para acessar meu portifolio</a></h4>
