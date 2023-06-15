@@ -16,17 +16,12 @@ function Home() {
         <section className="nome">
           <div>
             <h1>
-              Olá, <span> Robervan Souza</span>
+              Olá, <span>Sou Robervan Souza</span>
             </h1>
             <h2>
-              Olá, sou um Desenvolvedor Full-Stack, formado em Técnico
-              Mecatrônico e atualmente cursando Cyber Security. Sou apaixonado
+             Formado em  Desenvolvedor Full-Stack. Sou apaixonado
               por tecnologia e sempre busco me atualizar em novas linguagens,
-              frameworks e ferramentas. Com mais de um ano de experiência em
-              desenvolvimento, estou aberto a novos desafios e a aprender novas
-              tecnologias que possam agregar ao meu conhecimento. Além de
-              projetos pessoais, também dedico parte do meu tempo para cursos e
-              estudos que compartilho em meu GitHub.
+              frameworks e ferramentas. Em busca de aprimorar minhas habilidades venho desenvolvendo varios projetos, trabalhos voluntarios e freelance.
             </h2>
           </div>
         </section>
